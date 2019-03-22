@@ -1,0 +1,2 @@
+在首页上有一个“加入收藏”，因为没上线没有绝对地址，没有加上连接。请在部署时修改一下，谢谢。
+onclick="window.external.addFavorite('http://www.biz518.com','2008中国船舶工业发展国际高峰论坛')"

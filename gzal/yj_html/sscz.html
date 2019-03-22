@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>宜佳公司--无锡市宜佳人力资源有限公司--无锡市宜佳后勤服务有限公司</title>
+<link rel="stylesheet" href="css/yiji_style.css" />
+<script src="scripts/jquery-1.3.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(function(){
+	    var $div_li =$("div.tab_qyfc ul li");
+	    $div_li.click(function(){
+			$(this).addClass("selected")            //当前<li>元素高亮
+				   .siblings().removeClass("selected");  //去掉其它同辈<li>元素的高亮
+            var index =  $div_li.index(this);  // 获取当前点击的<li>元素 在 全部li元素中的索引。
+			$("div.qyfc_box > div")   	//选取子节点。不选取子节点的话，会引起错误。如果里面还有div 
+					.eq(index).show()   //显示 <li>元素对应的<div>元素
+					.siblings().hide(); //隐藏其它几个同辈的<div>元素
+		}).hover(function(){
+			$(this).addClass("hover");
+		},function(){
+			$(this).removeClass("hover");
+		})
+	})
+//]]>
+</script>
+</head>
+
+<body>
+  <div id="maxbox">
+      <div id="container">
+          <h1 title="宜佳公司欢迎您"><span>宜佳公司 无锡市宜佳人力资源有限公司 无锡市宜佳后勤服务有限公司</span></h1>
+          <div class="topMenu">
+            <ul>
+              <li class="none"><a href="#">加入收藏</a></li>
+              <li><a href="#">设为首页</a></li>
+            </ul>
+          </div>
+          <div class="Phone"><span>0510-85220729</span></div>
+          <div class="kong"></div>
+          <!-- 导航开始  -->
+        <div id="menu">
+           <div>
+              <ul id="topnav">
+                <li><a class="home" href="index.html">首页</a></li>
+                <li>
+                  <a class="gsgk" href="gsgk.html">公司概况</a>
+                  <div class="sub">
+                  <ul>
+                    <li><a href="qyjj.html">企业简介</a></li>
+                    <li><a href="qywh.html">企业文化</a></li>
+                    <li><a href="qyfc.html">企业风采</a></li>
+                    <li><a href="zlry.html">资历荣誉</a></li>
+                  </ul>
+                  </div>
+                </li>
+                <li>
+                    <a class="news" href="news.html">新闻中心</a>
+                   <div class="sub">
+                   <ul>
+                    <li><a href="hyzx.html">行业资讯</a></li>
+                    <li><a href="qydt.html">企业动态</a></li>
+                    <li><a href="zcfg.html">政策法规</a></li>
+                   </ul>
+                   </div>
+                </li>
+                <li>
+                   <a class="rlzy" href="rlzy.html">人力资源服务</a>
+                   <div class="sub">
+                   <ul>
+                     <li><a href="lwpq.html">劳务派遣</a></li>
+                     <li><a href="zyjs.html">职业介绍</a></li>
+                   </ul>
+                   </div>
+                </li>
+                <li>
+                   <a class="hqfw" href="hqfw.html">后勤服务</a>
+                   <div class="sub">
+                   <ul>
+                    <li><a href="fwms.html">服务模式</a></li>
+                    <li><a href="wygl.html">物业管理</a></li>
+                    <li><a href="ygss.html">员工宿舍</a></li>
+                    <li><a href="ygst.html">员工食堂</a></li>
+                    <li><a href="gwcs.html">购物超市</a></li>
+                    <li><a href="ydcs.html">运动场所</a></li>
+                  </ul>
+                  </div>
+                </li>
+                <li><a class="fwwl" href="fwwl.html">服务网络</a></li>
+                <li><a class="rczp" href="rczp.html">人才招聘</a></li>
+                <li><a class="lxwm" href="lxwm.html">联系我们</a></li>
+              </ul>
+           </div>
+        </div> 
+        <!-- 导航结束  -->
+        
+        <!-- 主体内容开始  -->
+        
+        <div id="content">
+        <!-- 左边开始  -->
+        <script type="text/javascript">
+        //<![CDATA[
+$(document).ready(function(){
+$(".song").click(function(){ 
+	$(this).addClass("xia")//为当前元素增加xia类
+	.children("a").show().end()//将子节点的<a>元素显示出来
+	                          //重新定位到上次操作的元素
+	.siblings().removeClass("xia")//获取元素的兄弟元素，并去掉它
+	                                //们的xia类	
+	.children("a").hide();          //将兄弟元素下的<a>元素隐藏
+	})
+})
+//]]>      
+ </script>
+          <div class="leftList">
+            <div class="wangrui">
+              <h2 class="left2">后勤服务</h2>
+              <div class="content">
+                  <div class="song">
+                  <span>服务模式</span>
+                  <a href="sscz.html">宿舍出租服务</a>
+                  <a href="bcfw.html">班车服务</a>
+                  <a href="gnbc.html">过年包车回家</a>
+                  </div>
+                  <div class="song">
+                  <span>物业管理</span>
+                  <a href="wygl.html">宜佳物业管理</a>
+                  </div>
+                  <div class="song">
+                  <span>员工宿舍</span>
+                  <a href="ygss.html">员工宿舍图片</a>
+                  </div>
+                  <div class="song">
+                  <span>员工食堂</span>
+                  <a href="ygst.html">员工食堂图片</a>
+                  </div>
+                  <div class="song">
+                  <span>购物超市</span>
+                  <a href="gwcs.html">购物超市图片</a>
+                  </div>
+                  <div class="song">
+                  <span>运动场所</span>
+                  <a href="ydcs.html">运动场所图片</a>
+                  </div>
+                <div class="clear"></div>
+              </div>
+               </div>
+              <div class="wangrui">
+              <h2 class="left">推荐人力资源信息</h2>
+              <div class="content">
+                <ul>
+                    <li><a href="##">新区索尼电子招普工</a><i>[劳务派遣]</i></li>
+                    <li><a href="##">新区夏普电子招普工</a><i class="lu">[职业介绍]</i></li>
+                    <li><a href="#">新区合擎科技招人事</a><i>[劳务派遣]</i></li>
+                    <li><a href="#">新区松下电子招普工</a><i class="lu">[职业介绍]</i></li>
+                    <li><a href="#">科技园聚慧新媒体</a><i>[劳务派遣]</i></li>
+                    <li><a href="#">科技园聚慧新媒体</a><i>[劳务派遣]</i></li>
+                    <li><a href="#">科技园聚慧新媒体</a><i>[劳务派遣]</i></li>
+               </ul>
+              </div>
+             </div>
+            <div class="wangrui">
+              <h2 class="left">服务模式</h2>
+              <div class="content">
+                <div class="fwms" title="服务模式"><a href="fwms.html">服务模式</a></div>
+              </div>
+             
+            </div>
+          </div>
+          <!-- 左边结束  -->
+          
+          <!-- 右边开始  -->
+          <div class="rightBox">
+             <div class="tongYongBox">
+               <h2>宜佳服务模式</h2>
+               <div class="content">
+                    <div class="tab_qyfc">
+                      <ul>
+                        <li class="selected">宿舍出租服务</li>
+                       <!--<li>班车服务</li>
+                       <li>过年包车回家</li>-->
+                        
+                      </ul>
+                    </div> 
+                    
+                <div class="qyfc_box">
+                        <div>
+                            <p><br /></p>
+                            <h5 class="lwpq">宿舍出租介绍 </h5>
+                            
+                           <p>经融危机以来，全国各地都在"闹人荒"，许多企业由于员工的不稳定性、或严重缺人而不断地采取提高工资、增加福利等手段来想尽办法要留住员工。员工也对工资、福利、住宿等因市场变化而不断变化、挑选，甚至要求越来越高。目前，市场上员工的住宿公寓虽也有不少，但室内的硬件设备也严重不足，有些比较便宜些的公寓，在宿舍管理上有很不尽人意；基于以上情况，我公司此次推出的员工公寓，会尽可能地解决这些问题，以让员工住得舒服、让企业真正放心为宗旨。具体的费用情况如下：</p> 
+                           <h5 class="teli2">出租模式为以下四种:(价格可面谈) </h5>
+                             <ul>
+                               <li class="sslb">
+                               <div>
+                                <img src="images/ssfw_img1.jpg" alt="" />
+                                <dl>
+                                  <dt>第一款：设施齐全型</dt>
+                                  <dd>独立卫生间</dd>
+                                  <dd>独立淋浴间</dd>
+                                  <dd>独立空调</dd>
+                                  <dd>独立热水器</dd>
+                                  <dd>独立宽带</dd>
+                                  <dd>长条桌子+4条凳子</dd>
+                                  <dd>独立彩色电视</dd>
+                                  <dd>独立封闭阳台</dd>
+                                  <dd>独立饮水机</dd>
+                                  <dd>投币洗衣机</dd>
+                                  <dd>上下钢构床8张</dd>
+                                  <dd>衣柜8个</dd>
+                                  <dt class="red">一年签：1500元/月（188元/人/月）</dt>
+                                  <dt class="luse">两年签：1400元/月（175元/人/月）</dt>
+                                </dl>
+                               </div>
+                               </li>
+                               <li class="sslb">
+                               <div>
+                               <img src="images/ssfw_img2.jpg" alt="" />
+                                <dl>
+                                  <dt>第二款：独立舒适型</dt>
+                                  <dd>独立卫生间</dd>
+                                  <dd>独立淋浴间</dd>
+                                  <dd>独立空调</dd>
+                                  <dd>独立热水器</dd>
+                                 <dd>长条桌子+4条凳子</dd>
+                                 <dd>独立封闭阳台</dd>
+                                  <dd>独立饮水机</dd>
+                                  <dd>投币洗衣机</dd>
+                                  <dd>上下钢构床8张</dd>
+                                  <dd>衣柜8个</dd>
+                                  <dt class="red">一年签：1200元/月（150元/人/月）</dt>
+                                  <dt class="luse">两年签：1100元/月（138元/人/月）</dt>
+                                </dl>
+                               </div>
+                               </li>
+                               <li class="sslb">
+                               <div>
+                               <img src="images/ssfw_img3.jpg" alt="" />
+                                <dl>
+                                  <dt>第三款：经济实惠型</dt>
+                                  <dd>独立卫生间</dd>
+                                  <dd>独立淋浴间</dd>
+                                  <dd>独立热水器</dd>
+                                  <dd>独立宽带</dd>
+                                  <dd>长条桌子+4条凳子</dd>
+                                  <dd>独立彩色电视</dd>
+                                  <dd>独立封闭阳台</dd>
+                                  <dd>独立饮水机</dd>
+                                  <dd>投币洗衣机</dd>
+                                  <dd>上下钢构床8张</dd>
+                                  <dd>衣柜8个</dd>
+                                  <dd>吊顶电风扇2台</dd>
+                                  <dt class="red">一年签：1000元/月（125元/人/月）</dt>
+                                  <dt class="luse">两年签：900元/月（112元/人/月）</dt>
+                                </dl>
+                               </div>
+                               </li>
+                               <li class="sslb">
+                               <div>
+                               <img src="images/ssfw_img4.jpg" alt="" />
+                                <dl>
+                                  <dt>第四款：实用组合型</dt>
+                                  <dd>独立卫生间</dd>
+                                  <dd>独立淋浴间</dd>
+                                  <dd>独立热水器2台</dd>
+                                  <dd>吊顶电风扇2台</dd>
+                                  <dd>长条桌子+4条凳子</dd>
+                                  <dd>独立封闭阳台</dd>
+                                  <dd>独立饮水机2台</dd>
+                                  <dd>投币洗衣机</dd>
+                                  <dd>上下钢构床16张</dd>
+                                  <dd>衣柜16个</dd>
+                                  <dt class="red">一年签：1800元/月（112元/人/月）</dt>
+                                  <dt class="luse">两年签：1600元/月（100元/人/月）</dt>
+                                </dl>
+                               </div>
+                               </li>
+                             </ul>
+                             <p><br /></p>
+                        </div>
+                        
+                       <!--<div class="hide">
+                        <p><br /></p>
+                            <h5 class="lwpq">班车服务</h5>
+                             <p>我们提供豪华舒适的大巴车接送服务，确保员工安全准时上下班，满足工厂生产需要。<img class="left" src="images/banche.png" alt="" /></p>
+                              
+                        </div>
+                        
+                     <div class="hide">
+                        <p><br /></p>
+                            <h5 class="lwpq">过年包车回家</h5>
+                        <p>我们提供豪华舒适的大巴车过年包车回家服务，上保险确保旅途安全出行，满足外来务工人员的需要。 <img class="left" src="images/banche.png" alt="" /></p>
+                        
+                        </div>-->
+                        
+                                        
+                    </div> 
+                <div class="clear"></div>       
+               </div>            
+             </div>
+          </div>
+          <!-- 右边结束 -->
+          <div class="clear"></div>
+        </div> 
+        <!-- 主体内容结束 --> 
+        <!-- 下导航开始 --> 
+        <div class="footerMenu">
+            <ul>
+              <li class="none"><a href="index.html">首页</a></li>
+              <li><a href="gsgk.html">公司概况</a></li>
+              <li><a href="news.html">新闻中心</a></li>
+              <li><a href="rlzy.html">人力资源服务</a></li>
+              <li><a href="hqfw.html">后勤服务</a></li>
+              <li><a href="fwwl.html">服务网络</a></li>
+              <li><a href="rczp.html">人才招聘</a></li>
+              <li><a href="lxwm.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!-- 下导航结束 --> 
+        <!-- 脚部内容开始 -->
+        <div class="footerBox">
+         <p><span>建议请使用IE7及以上版本，火狐，谷歌，Safari浏览器进行浏览以确保正常显示内容</span></p>
+         <p>版权所有：无锡市宜佳人力资源有限公司，无锡市宜佳后勤服务有限公司   地 址：无锡市新区汉江路5号新区交警大队院内1幢406室<br/>   
+            联系电话：( 单位招聘 )：13003338159、18912391947钟小姐   ( 个人求职) ：0510—85220729；85220927</p>
+        </div>
+        <!-- 脚部内容结束 -->
+      </div>
+  </div>
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+	
+
+	function megaHoverOver(){
+		$(this).find(".sub").stop().fadeTo('fast', 1).show();
+			
+		//Calculate width of all ul's
+		(function($) { 
+			jQuery.fn.calcSubWidth = function() {
+				rowWidth = 0;
+				//Calculate row
+				$(this).find("ul").each(function() {					
+					rowWidth += $(this).width(); 
+				});	
+			};
+		})(jQuery); 
+		
+		if ( $(this).find(".row").length > 0 ) { //If row exists...
+			var biggestRow = 0;	
+			//Calculate each row
+			$(this).find(".row").each(function() {							   
+				$(this).calcSubWidth();
+				//Find biggest row
+				if(rowWidth > biggestRow) {
+					biggestRow = rowWidth;
+				}
+			});
+			//Set width
+			$(this).find(".sub").css({'width' :biggestRow});
+			$(this).find(".row:last").css({'margin':'0'});
+			
+		} else { //If row does not exist...
+			
+			$(this).calcSubWidth();
+			//Set Width
+			$(this).find(".sub").css({'width' : rowWidth});
+			
+		}
+	}
+	
+	function megaHoverOut(){ 
+	  $(this).find(".sub").stop().fadeTo('fast', 0, function() {
+		  $(this).hide(); 
+	  });
+	}
+
+
+	var config = {    
+		 sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
+		 interval: 100, // number = milliseconds for onMouseOver polling interval    
+		 over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
+		 timeout: 500, // number = milliseconds delay before onMouseOut    
+		 out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
+	};
+
+	$("ul#topnav li .sub").css({'opacity':'0'});
+	$("ul#topnav li").hoverIntent(config);
+
+
+
+});
+
+//]]>
+</script>
+  
+</body>
+</html>

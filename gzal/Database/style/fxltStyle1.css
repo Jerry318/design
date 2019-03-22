@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0;}
+body{font:12px Arial,sans-serif; color:#333; background-color:#fff; overflow-x:hidden;}
+a{text-decoration:none; color:#333;}
+a:hover{text-decoration:underline;}
+ul{list-style:none;}
+img{border:none;}
+.clear{ clear:both; height:1px; visibility:hidden; line-height:1px; overflow:hidden;}
+
+
+/*头部导航开始*/
+div#topMenu{ width:auto;line-height:31px; background:url(../images/topMenu_bg.jpg) repeat-x left center;} 
+div#topMenu .inner{width:960px;height:31px; margin:0 auto; overflow:hidden;}
+div#topMenu .inner .logo{ width:248px; height:31px; background:url(../images/logo_img.png) no-repeat left center; float:left; text-indent:-9999px;}
+div#topMenu .inner .logo a{ display:block; padding:0 3px;}
+div#topMenu .inner .middle{ float: left; height: 18px; line-height: 18px;overflow: hidden; padding-top:8px;text-align: center; width: 293px;}
+div#topMenu .inner .middle a{ font:normal 12px/31px Verdana, Geneva, sans-serif; color:#333; }
+div#topMenu .inner ul{ float:right;list-style-type:none; line-height:31px; padding-top:0px;}
+div#topMenu .inner ul li{ float:left; margin-right:7px;}
+div#topMenu .inner ul li.red{font-weight:normal; color:red; margin:0;}
+div#topMenu .inner ul li a{font-weight:bold; padding:0 5px;color:#42454F;}
+div#topMenu .inner ul li a:hover{text-decoration:underline;color:#900;}
+/*头部导航结束*/
+
+/*主体包裹区域开始*/
+div#wrap{width:auto;background:url(../images/top_wrap_bg.jpg) center top no-repeat;}
+div#wrap .topWrap{width:auto; background:url(../images/footer_wrap_bg.jpg) no-repeat center bottom;}
+div#wrap .footerWrap{}
+div#wrap .middleWrap{width:auto; height:auto!important; height:824px; min-height:824px; background:url(../images/middle_wrap_bg.png) no-repeat center center;_background:url(../images/middle_wrap_bg.gif) no-repeat center center;}
+
+div#banner{width:838px; height:195px; margin:0 auto; background:url(../images/h1_title_bg.png) no-repeat center center; position:relative;_background:url(../images/h1_title_bg.jpg) no-repeat center center;}
+div#banner .logo{width:216px; height:107px; position:absolute; top:0; left:10px; overflow:hidden; text-indent:-9999px;}
+div#banner .logo a{display:block;line-height:107px;}
+
+div#banner .links{ width:352px; height:61px; position:absolute; bottom:2px; right:2px; overflow:hidden;}
+div#banner .links ul{line-height:50px;text-indent:-9999px;}
+div#banner .links ul li{float:left;}
+div#banner .links ul li.fgq{margin-right:19px; display:inline;}
+div#banner .links ul li a{display:block; width:153px; height:50px; background:url(../images/EnterWebsite_button.png) no-repeat left top;}
+div#banner .links ul li a.lentan{ background:url(../images/officialForum_button.png) no-repeat left top;}
+div#banner .links ul li a:hover{background-position:left bottom; background-repeat:no-repeat;}
+
+div#content{ width:997px;  margin:0 auto; padding-bottom:17px; background:url(../images/content_footer_bg.png) left bottom no-repeat; _background:url(../images/content_footer_bg.gif) left bottom no-repeat;}
+div#content h3{ width:997px; line-height:56px; height:56px; margin:0 auto; background:url(../images/content_h3_bg.png) center top no-repeat; text-align:center;text-indent:-9999px;
+_background:url(../images/content_h3_bg.jpg) center top no-repeat;}
+div#content h3 a{ display:block;margin:0 auto;width:222px;height:56px;_height:58px;background:url(../images/ImmediatelyActivated.png) no-repeat center top;_background:url(../images/ImmediatelyActivated.jpg) no-repeat center top;}
+div#content .inner{height:auto!important; height:513px; min-height:513px; width:985px; margin:0 auto; background:url(../images/contentRepeat_Y.png) repeat-y center top; padding:0 6px;
+_background:url(../images/contentRepeat_Y.gif) repeat-y center top; _padding-top:3px; _margin-top:-3px;}
+
+div#content .inner .left{width:224px; float:left; height:auto; margin-left:5px; display:inline;}
+div#content .inner .left .login{width:224px; height:175px; background:url(../images/accountLogin_bg.png) left top no-repeat; }
+div#content .inner .left .login2{width:224px; height:175px; background:url(../images/LoginComplete.jpg) left top no-repeat;}
+div#content .inner .left .login2 ul{height:111px; padding-top:58px; font-size:14px; padding-left:20px;}
+div#content .inner .left .login2 ul li{line-height:18px; color:#FFF;}
+
+
+div#content .inner .left .login form{ height:111px; padding-top:58px;}
+div#content .inner .left .login form div {margin:0 auto;height:27px; line-height:27px; padding-top:5px;}
+
+.int label {float:left; width:80px; text-align:right; margin-right:6px;visibility: hidden;_display:inline;}
+.int input {padding:2px 1px 2px 4px;background: none repeat scroll 0 0 transparent; border:none; width:118px; color:#fff; height:19px; line-height:19px;}
+div#content .inner .left .login form div.int2{padding-top:10px;}
+div#content .inner .left .login form div.sub{padding:8px 13px 0 10px; height:37px; width:204px;position:relative;}
+div#content .inner .left .login form div.sub ul li{line-height:37px;}
+div#content .inner .left .login form div.sub ul li a{ overflow:hidden; display:block; width:77px; height:28px; background:url(../images/zhaosi.png) no-repeat left top; text-indent:-9999px; margin:0 0 4px 3px;}
+*+html #content .inner .left .login form div.sub ul li a{margin:-5px 0 4px 3px;}
+.sub input#send{ width:88px; height:29px; position:absolute;bottom:11px; right:18px; border:none; overflow:hidden; text-indent: -9999px; background:url(../images/loginButton.png) no-repeat left top; cursor:pointer;_background:url(../images/loginButton.jpg) no-repeat left top;}
+.sub input#send:hover{ background:url(../images/loginButton.png) no-repeat left bottom;}
+
+#content .inner .left .linkList{padding-top:8px; width:224px; overflow:hidden;}
+#content .inner .left .linkList li{text-align:center;line-height:73px; height:73px; margin-bottom:8px;text-indent:-9999px;width:224px; background-repeat:no-repeat; background-position:0 0; background-image:url(../images/Button_a_pinhe.gif);cursor:pointer;}
+#content .inner .left .linkList li#bt2{background-position:0 -146px;cursor:pointer;}
+#content .inner .left .linkList li#bt3{background-position:0 -292px;cursor:pointer;}
+#content .inner .left .linkList li#bt4{background-position:0 -438px;cursor:pointer;}
+
+#content .inner .left .linkList li#bt4.hover{background-position:0 -511px;cursor:pointer;}
+#content .inner .left .linkList li#bt3.hover{background-position:0 -365px;cursor:pointer;}
+#content .inner .left .linkList li#bt2.hover{background-position:0 -219px;cursor:pointer;}
+#content .inner .left .linkList li.hover{background-position:0 -73px;cursor:pointer;}
+
+#content .inner .left .linkList li#bt4.selected{background-position:0 -511px;cursor:pointer;}
+#content .inner .left .linkList li#bt3.selected{background-position:0 -365px;cursor:pointer;}
+#content .inner .left .linkList li#bt2.selected{background-position:0 -219px;cursor:pointer;}
+#content .inner .left .linkList li.selected{background-position:0 -73px;cursor:pointer;}
+
+
+/*div#content .inner .left .linkList li a{ display:block; text-align:center; background:url(../images/Button_a1.png) no-repeat left top; width:224px; height:73px;}
+div#content .inner .left .linkList li a.bt2{background:url(../images/Button_a2.png) no-repeat left top;}
+div#content .inner .left .linkList li a.bt3{background:url(../images/Button_a3.png) no-repeat left top;}
+div#content .inner .left .linkList li a.bt4{background:url(../images/Button_a4.png) no-repeat left top;}
+/*div#content .inner .left .linkList li a:hover{background-position:left bottom; background-repeat:no-repeat;}*/
+
+
+
+
+
+
+#middleSwf{width:546px; height:499px; float:left; margin: 2px 0 0 2px; border:none; display:inline; background:#FFF; }
+div#content .inner .right{width:189px; float:right; height:auto; margin-right:6px; display:inline;}
+div#content .inner .right .xywj{width:189px; padding-bottom:12px; background:url(../images/FortunatelyPlayersFooter.png) no-repeat left bottom;}
+div#content .inner .right .xywj h3{width:189px; height:50px;line-height:50px; background:url(../images/FortunatelyPlayers_h3.png) no-repeat left top;}
+div#content .inner .right .xywj h3 span{ text-align:center; visibility:hidden;}
+div#content .inner .right .xywj .content{width:189px; height:auto!important; height:297px; min-height:297px; background:url(../images/FortunatelyPlayersContent_bg.png) repeat-y center top;}
+div#content .inner .right .xywj .content ul{width:160px; padding:2px 13px 0 15px; line-height:23px; overflow:hidden;list-style-type:none;}
+div#content .inner .right .xywj .content ul li{width:149px;overflow:hidden;background:url(../images/list_icon.jpg) no-repeat left center; padding-left:11px; border-bottom:1px dotted #15FAFF; color:#fff; font-size:13px; height:23px;text-overflow:ellipsis;word-break:keep-all;white-space:nowrap;overflow:hidden;}
+div#content .inner .right .bttomLinks{width:189px; height:142px; background:url(../images/rightBottomBox_bg.png) no-repeat left bottom; margin-top:7px;}
+div#content .inner .right .bttomLinks ul{width:153px;padding:16px 16px 0 18px; line-height:49px;}
+div#content .inner .right .bttomLinks ul li{text-indent:-9999px;}
+div#content .inner .right .bttomLinks ul li.jiange{margin-bottom:10px;}
+div#content .inner .right .bttomLinks ul li a{ display:block; width:153px; height:50px; background:url(../images/IntoTheGame.png) no-repeat left top;_background:url(../images/IntoTheGame.jpg) no-repeat left top;}
+div#content .inner .right .bttomLinks ul li a.ayhome{background:url(../images/AiYou_home.png) no-repeat left top;_background:url(../images/AiYou_home.jpg) no-repeat left top;}
+div#content .inner .right .bttomLinks ul li a:hover{background-repeat:no-repeat; background-position:left bottom;}
+/*主体包裹区域结束*/
+
+
+
+/*脚部包裹区域开始*/
+div#footer{width:auto;height:113px; background:#fff url(../images/Footer_top_bg.gif) left top repeat-x; padding-top:15px;}
+#footerMenu{width:372px; height:20px; margin:0 auto;}
+#footerMenu ul{font:normal 14px/18px Tahoma, Geneva, sans-serif; text-align:center;}
+#footerMenu ul li{ float:left; padding-right:5px; background:url(../images/a_right.png) no-repeat right center;}
+#footerMenu ul li.none{ background:none;}
+#footerMenu ul li a{ padding:3px 10px;  color:#3E3D3D; text-decoration:none;}
+#footerMenu ul li a:hover{ text-decoration:underline;}
+div#footer p{font:normal 12px/14px Tahoma, Geneva, sans-serif; text-align:center; padding:4px 10px;}
+/*脚部包裹区域结束*/
+
+
+/*滚动显示玩家信息的代码*/
+#demoTop {
+float:left;
+margin:2px auto;
+overflow:hidden;
+height: 293px;
+width: 189px;
+}
+#demoTop .indemo {
+float: left;
+height: 1000%;
+}
+#demo1,#demo3 {
+float: left;
+border:none;
+}
+#demo2,#demo4 {
+float: left;
+border:none;
+}
+
+.tab_box{width:545px; float:left; /*height:auto!important; height:502px; min-height:502px;*/margin: 0 0 0 8px; display:inline;height:498px;_height:498px; overflow:hidden;}
+.tab_box div{ width:545px; overflow:hidden; padding:0 0 11px 0; background:url(../images/middle_content_footer.png) no-repeat left bottom;}
+.tab_box div h2{ font:bold 14px/50px Tahoma, Geneva, sans-serif;width:545px; height:50px; display:block; overflow:hidden; text-indent:-9999px; background:url(../images/middle_h3_bg1.png) no-repeat left top;}
+.tab_box div h2.two{background:url(../images/middle_h3_bg1.png) no-repeat 0 -50px;}
+.tab_box div h2.Three{background:url(../images/middle_h3_bg1.png) no-repeat 0 -100px;}
+.tab_box div h2.Four{background:url(../images/middle_h3_bg1.png) no-repeat 0 -150px;}
+.tab_box div .content{width:515px; height:auto!important; height:421px; min-height:421px; background:url(../images/middle_content_y_bg.png) repeat-y left top;padding:8px 15px; color:#FFFF00;}
+.tab_box div .content h4{ font:bold 16px/20px Tahoma, Geneva, sans-serif; margin:15px 0 10px 0;padding:0 29px;}
+.tab_box div .content p{font:normal 14px/2.3 Tahoma, Geneva, sans-serif; text-indent:0; padding:0 42px;}
+.tab_box div .content p a{color:#0CF;font-weight:bold; text-decoration:underline;}
+.tab_box div .content p a.red,.tab_box div .content p span{ color:#906;}
+.hide{display:none;}
+.show{ display:block;}

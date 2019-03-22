@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>尚奕网络广告联盟,尚奕广告网络,欢迎您来到尚奕广告联盟！</title>
+<link rel="stylesheet" type="text/css" href="style/sunyeepStyle.css" media="all" />
+<script type="text/javascript" src="script/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="script/slides.min.jquery.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+		$(function(){
+			// 开始幻灯片设置为1
+			var startSlide = 1;
+			// 幻灯片编号，如果它存在
+			if (window.location.hash) {
+				startSlide = window.location.hash.replace('#','');
+			}
+			// 初始化幻灯片
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/loading.gif',
+				generatePagination: true,
+				play: 2000,
+				pause: 4000,
+				hoverPause: true,
+				//获取开始幻灯片
+				start: startSlide,
+				animationComplete: function(current){
+					//设置幻灯片编号作为一个锚点链接
+					window.location.hash = '#' + current;
+				}
+			});
+		  $("#UpperHalf .left .cjwt .contents ul li:last").css("border","none");
+		  $("#WrapContent .rightss .Notice .scrollNews ul li:last").css("border","none");
+		  $("#WrapContent .links ul li:last").css("background","none");
+		  $("#FooterBox .inner ul li:last").css("background","none");
+		   var $div_li =$("div.tab_menu ul li");
+	       $div_li.bind("mouseover mouseout",function(){
+			$(this).addClass("selected")            //当前<li>元素高亮
+				   .siblings().removeClass("selected");  //去掉其它同辈<li>元素的高亮
+            var index =  $div_li.index(this);  // 获取当前点击的<li>元素 在 全部li元素中的索引。
+			$("div#LowerBody .contents > div")   	//选取子节点。不选取子节点的话，会引起错误。如果里面还有div 
+					.eq(index).show()   //显示 <li>元素对应的<div>元素
+					.siblings().hide(); //隐藏其它几个同辈的<div>元素
+		}).hover(function(){
+			$(this).addClass("hover");
+		},function(){
+			$(this).removeClass("hover");
+		});
+	});
+		//]]>
+	</script>
+    
+    
+</head>
+
+<body>
+ <div id="bodyTop">
+   <div class="top"><span>欢迎您来到尚奕广告联盟！</span>
+   <ul>
+     <li><a href="">设为首页</a></li>
+     <li><a href="">收藏本站</a></li>
+     <li><a href="">腾讯微博</a></li>
+     <li><a href="">新浪微博</a></li>
+   </ul>
+   </div>
+    <div id="bodyTopWrap">
+    <h1><a href="http://wwww.sunyeep.com" title="尚奕广告网络">尚奕广告网络</a></h1>
+    <div class="Contact"><span>联盟客服热线：4000-1555-01</span></div></div>
+     </div>
+   <div id="Navigation">
+       <div id="menuMain">
+         <ul>
+           <li class="mar4"><a href="index.html" class="home">首页</a></li>
+           <li class="mar4"><a href="WebMaster.html" class="WebMaster selected">网站主</a></li>
+           <li class="mar2"><a href="Advertising.html" class="Advertisers">广告主</a></li>
+           <li class="mar2"><a href="Frequently.html" class="CommonProblem">常见问题</a></li>
+           <li><a href="aboutUs.html" class="aboutUs">关于尚奕</a></li>
+         </ul>
+       </div>
+   </div>
+   <div id="MainContent">
+    <div id="Slidebox">
+        <div id="example">
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+					 <img src="images/bannerImg1.jpg" alt="" />
+					</div>
+					<div class="slide">
+					 <img src="images/bannerImg2.jpg" alt="" />
+					</div>
+					<div class="slide">
+					 <img src="images/bannerImg3.jpg" alt="" />
+					</div>
+					<div class="slide">
+					 <img src="images/bannerImg4.jpg" alt="" />
+					</div>
+					
+					<!--<div class="slide">
+                     
+						<h1>可以添加标题</h1>
+						<p>可以添加文本</p>
+						<p><a href="##" class="link">链接文本</a></p>
+					</div>-->
+				</div>
+				<a href="#" class="prev"><img src="images/arrow-prev.png" width="17" height="33" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="images/arrow-next.png" width="17" height="33" alt="Arrow Next"></a>
+			</div>
+         </div>
+    </div>
+    <div id="WrapContent">
+          <div class="Template">
+              <div id="UpperHalfTwo">
+                    <div class="left">
+                     <div class="login">
+                        <h3>用户登录</h3>
+                        <div class="contents">
+                           <form action="" method="post">
+                          <div class="int"><label for="usermane">账 号:</label>
+                             <input type="text" name="" id="username" class="" />
+                             </div>
+                            <div class="int">
+                             <label for="pass">密 码:</label>
+                             <input type="password" id="pass" class="" />
+                            </div>
+                            <div class="int yanzheng">
+                            <label for="Verification">验证码:</label>
+                            <input type="text" name="" id="Verification"  class=""/><span><img src="images/Verification.jpg" alt="此处添加验证码代码" /></span>
+                            </div>
+                             <div class="sub">
+                             <input type="submit" value="提交" id="send" />
+                             <a href="##" class="mazh">密码找回</a>
+                           </div>
+                           <div class="subs">
+                             <a href="##" class="zcweb">网站主注册</a>
+                             <a href="##" class="zcgg">广告主注册</a>
+                           </div>
+                         </form>
+                        </div>
+                     </div>
+                     <div class="Side">
+                           <h3></h3>
+                           <div class="contents">
+                                <ul>
+                                  <li><a href="WebMaster-inner.html">计费方式</a></li>
+                                  <li><a href="">佣金结算</a></li>
+                                  <li><a href="">常见问题</a></li>
+                                  <li><a href="">展示形式</a></li>
+                                  </ul>
+                           </div>
+                           
+                     </div>
+                      
+                      <div class="Service">
+                           <h3>尚奕客服</h3>
+                           <div class="contents">
+                       <ul>
+                         <li>
+                            <span>广告主客服</span>
+                            <i>测试电话位置：0510-85133026</i>
+                            <ul>
+                              <li><a href="tencent://message/?uin=223166581&amp;Site=www.sunyeep.com&amp;Menu=yes"><img border="0" src="images/QQOnline.jpg":223166581:1 alt="点击交谈" style="width:auto; height:auto;"></a><span>陶陶</span></li>
+                              <li><a href="tencent://message/?uin=223166581&amp;Site=www.sunyeep.com&amp;Menu=yes"><img border="0" src="images/QQOnline.jpg":223166581:1 alt="点击交谈" style="width:auto; height:auto;"></a><span>壮壮</span></li>
+                              <li><a href="tencent://message/?uin=223166581&amp;Site=www.sunyeep.com&amp;Menu=yes"><img border="0" src="images/QQOnline.jpg":223166581:1 alt="点击交谈" style="width:auto; height:auto;"></a><span>陶陶</span></li>
+                              <li><a href="tencent://message/?uin=223166581&amp;Site=www.sunyeep.com&amp;Menu=yes"><img border="0" src="images/QQOnline.jpg":223166581:1 alt="点击交谈" style="width:auto; height:auto;"></a><span>壮壮</span></li>
+                           </ul>
+                         </li>
+                         <li>
+                         <span>网站媒体客服</span>
+                         <i>测试电话位置：0510-85133026</i>
+                            <ul>
+                              <li><a href="tencent://message/?uin=223166581&amp;Site=www.sunyeep.com&amp;Menu=yes"><img border="0" src="images/QQOnline.jpg":223166581:1 alt="点击交谈" style="width:auto; height:auto;"></a><span>陶陶</span></li>
+                              <li><a href="tencent://message/?uin=223166581&amp;Site=www.sunyeep.com&amp;Menu=yes"><img border="0" src="images/QQOnline.jpg":223166581:1 alt="点击交谈" style="width:auto; height:auto;"></a><span>壮壮</span></li>
+                              <li><a href="tencent://message/?uin=223166581&amp;Site=www.sunyeep.com&amp;Menu=yes"><img border="0" src="images/QQOnline.jpg":223166581:1 alt="点击交谈" style="width:auto; height:auto;"></a><span>陶陶</span></li>
+                              <li><a href="tencent://message/?uin=223166581&amp;Site=www.sunyeep.com&amp;Menu=yes"><img border="0" src="images/QQOnline.jpg":223166581:1 alt="点击交谈" style="width:auto; height:auto;"></a><span>壮壮</span></li>
+                           </ul>
+                         </li>
+                         
+                       </ul>
+                 </div>
+                      
+                     </div>
+                     
+                    </div>
+                    <div class="rights">
+                        <div class="Product">
+                            <h3>网站主</h3>
+                            <div class="contents">
+                              <div class="inner">
+                              <div class="Slogans A1">
+                                <p>
+                              <span>"准时、准确、准地"的付款方式结合高质量的广告资源选择，用最合理的方式使的流量最大收益化；</span>常年多个品牌广告的资源需求是尚弈的源泉，
+                               丰富多样的广告模式是尚弈的经营理念。
+                               </p>
+                               </div>
+                              <div class="Slogans A2">
+                               <p>
+                              庞大的广告主客户群，让你的<span>网站的流量迅速转换成现金</span>；快速、及时、日付、准确的<span>第三方费用结算，值得您依赖；</span>丰富灵活多样的广告形式                              ，充分满足您的网站需求.
+                               </p>
+                              </div>
+                              <div class="Slogans A3">
+                                <p>
+                                 卓越的网站运营团队，<span>免费为您提供网赚咨询；坚实的技术平台，</span>长久稳健的保证您的赚钱顺途.
+                               </p>
+                              </div>
+                              <div class="Slogans2"><img src="images/Slogans4.jpg" alt="" /></div>
+                              </div>  
+                            </div>
+                          
+                        </div>
+                        
+                    </div>
+              </div>
+              
+          </div>
+          
+          <div class="links">    
+              <ul>
+                <li><a href="##">麒麟传媒</a></li>
+                <li><a href="##">七夕链</a></li>
+                <li><a href="##">百度</a></li>
+                <li><a href="##">爱站网</a></li>
+                <li><a href="##">A5站长网</a></li>
+                <li><a href="##">落伍者</a></li>
+                <li><a href="##">51啦统计</a></li>
+                <li><a href="##">一迈网络</a></li>
+                <li><a href="##">站长推优网</a></li>
+              </ul>
+          </div>
+    </div>
+    <div id="FooterBox">
+        <div class="inner">
+            <ul>
+              <li><a href="##">关于我们</a></li>
+              <li><a href="##">联系我们</a></li>
+              <li><a href="##">成功案例</a></li>
+              <li><a href="##">常见问题</a></li>
+              <li><a href="##">论坛</a></li>
+              <li><a href="##">TOP</a></li>
+            </ul>
+            <p>Copyright © 2009-2011 sunyeep.com  All rights reserved Powered by 尚奕广告联盟 Corporation</p>
+            <p>信息产业部备案号：苏ICP备09067411号</p>
+        </div>
+    </div>
+   </div>
+</body> 
+</html>

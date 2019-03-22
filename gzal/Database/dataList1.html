@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>飞雪连天游戏数据库----飞雪连天游戏装备数据库列表</title>
+<link rel="stylesheet" type="text/css" href="style/fxltStyle.css" media="all" />
+<script type="text/javascript" src="script/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" >
+//<![CDATA[
+$(document).ready(function(){
+	var x =6;
+	var y =6;
+	$("a.chufa").mouseover(function(e){
+    		$("span.tooltip").addClass("show");
+			$("span.tooltip").css({
+				  "color":"#fff",
+				  "top":(e.pageY + y) + "px",//page是页面的意思
+				  "left":(e.pageX + x) + "px" 
+				  }).show("fast");//设置x坐标和Y坐标，并且显示  fast表示速度可以用数字来代替
+ 		 }).mouseout(function (e) {
+   			 $("span.tooltip").removeClass("show");
+			 $("span.tooltip").css({
+					 "top":(e.pageY + y) + "px",
+					 "left":(e.pageX + x)+ "px"
+					 });
+ 			 }
+		);
+})
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+	$(function(){
+		$("table#shuju tbody>tr:odd").addClass("odd");  /* 奇数行添加样式*/
+		$("table#shuju tbody>tr:even").addClass("even"); /* 偶数行添加样式*/
+		$("table#shuju tbody>tr").hover(function(){
+    		$(this).addClass("hover");
+ 		 }, function () {
+   			 $(this).removeClass("hover");
+ 			 }
+		);
+	})
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript">
+window.onload=function(){
+    var o=document.getElementById('box');
+    window.setInterval(function(){scrollup(o,18,0);},3000);
+}
+///滚动主方法
+///参数:o 滚动块对象
+///参数:d 每次滚屏高度
+///参数:c 当前已滚动高度
+function scrollup(o,d,c){
+    if(d==c){
+        var t=getFirstChild(o.firstChild).cloneNode(true);
+        o.removeChild(getFirstChild(o.firstChild));
+        o.appendChild(t);
+        t.style.marginTop="0px";
+    }else{
+        c+=2;
+        getFirstChild(o.firstChild).style.marginTop=-c+"px";
+        window.setTimeout(function(){scrollup(o,d,c)},20);
+    }
+}
+//解决firefox下会将空格回车作为节点的问题
+function getFirstChild(node){
+  while (node.nodeType!=1)
+  {
+         node=node.nextSibling;
+  }
+  return node;
+}
+</script>
+
+
+
+</head>
+
+<body>
+<div id="topMenu">
+ <div class="inner">
+   <div class="logo"><a href="http://www.aiyou.com/" title="你好，欢迎来到爱游网！" target="_blank">你好，欢迎来到爱游网！</a></div>
+   <div class="middle">
+   <ul id="box">
+        <li><a href="###">为《石器之王》拉票助威 赢取超值好礼</a></li>
+        <li><a href="###">为《飞雪连天》拉票助威 赢取超值好礼</a></li>
+        <li><a href="###">快来获取《飞雪连天》封测激活码</a></li>
+        <li><a href="###">快来获取《飞雪连天》封测大礼包</a></li>
+   </ul>
+   </div>
+   <ul>
+     <li><a href="http://www.aiyou.com/" title="AiYou首页" target="_blank">AiYou首页</a></li>
+     <li class="red">推荐游戏：</li>
+     <li><a href="http://as.aiyou.com/" title="傲视天地" target="_blank">傲视天地</a></li>
+     <li><a href="##" title="设为首页">设为首页</a></li>
+     <li><a href="##" title="添加收藏">添加收藏</a></li>
+   </ul>
+ </div>
+</div>
+<div id="wrap">
+  <div class="topWrap">
+  <div class="footerWrap">
+  <div class="middleWrap">
+      <div id="banner">
+        <h1 class="logo" title="飞雪连天网页游戏"><a href="http://fx.aiyou.com/" title="飞雪连天网页游戏">飞雪连天网页游戏</a></h1>
+       <div class="links">
+          <ul>
+            <li class="fgq"><a href="http://fxlt.aiyou.com/" title="进入官网" target="_blank">进入官网</a></li>
+            
+          </ul>
+       </div>
+      </div>
+      <div id="Menu">
+      <div class="top">
+           <ul>
+             <li><a href="http://fx.aiyou.com/" target="_blank">官方首页</a></li>
+             <li><a href="dataList1.html" target="_blank">装备</a></li>
+             <li><a href="dataList2.html" target="_blank">套装</a></li>
+             <li><a href="dataList3.html" target="_blank">神装</a></li>
+             <li><a href="###">技能</a></li>
+             <li><a href="###">任务</a></li>
+             <li><a href="###">地图</a></li>
+             <li><a href="###">怪物</a></li>
+             <li><a href="###">NPC</a></li>
+             <li><a href="###">活动</a></li>
+           </ul>
+      </div>
+      <div class="bottom">
+           <ul>
+             <li><strong>职业类别:</strong></li>
+             <li><a href="##">武神</a></li>
+             <li><a href="##">天剑</a></li>
+             <li><a href="##">万象</a></li>
+           </ul>
+           <ul>
+             <li><strong>装备类型:</strong></li>
+             <li><a href="##">武器</a></li>
+             <li><a href="##">衣服</a></li>
+             <li><a href="##">腰带</a></li>
+             <li><a href="##">鞋子</a></li>
+             <li><a href="##">头盔</a></li>
+             <li><a href="##">护肩</a></li>
+             <li><a href="##">项链</a></li>
+             <li><a href="##">戒指</a></li>
+           </ul>
+      </div>
+      </div>
+      <div id="content">
+           <h3><span>当前第1页，共9736条记录</span><strong><a href="##">&lt;</a><a href="##">1</a>|<a href="##">2</a> <a href="##">3</a> <a href="##">4</a> <a href="##">5</a> <a href="##">6</a> <a href="##">7</a> <a href="##">8</a> <a href="##">9</a> <a href="##">10</a> <a href="##">11</a>|<a href="##">25</a><a href="##">&gt;</a></strong></h3>
+           <div class="inner">
+              <table id="shuju">
+                      <thead>
+                           <tr class="none">
+                           <th >【图标】</th>
+                           <th >名称</th>
+                           <th >等级要求</th>
+                           <th >部位类型</th>
+                           <th >门派限制</th>
+                           <th >品质</th>
+                           <th >装备类型</th>
+                           <th >攻击</th>
+                           <th >防御</th>
+                           <th >爆击</th>
+                           <th >命中</th>
+                           <th >闪避</th>
+                           <th >HP上限</th>
+                           </tr>
+                     </thead>
+                     <tbody>
+                           <tr>
+                           <td class="icon"><span class="tooltip"><img src="images/Cloth7_4.jpg" alt="图标信息" />鹤雪等级1<br />普通装备 时装<br />装备简介:璇玑玉脂融入鹤血所制，威力无比，武当镇派之宝，武当派高级时装</span><a href="###" class="chufa" title=""><img src="images/41X41_img.png" alt="图标信息" /></a></td>
+                           <td><a href="###" title="相关信息" target="_blank">武者之刃</a></td>
+                           <td>15</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td>绿色装备</td>
+                           <td>普通装备</td>
+                           <td >30</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td >20</td>
+                           <td >0</td>
+                           <td >0</td>
+                           </tr>
+                           <tr>
+                           <td class="icon"><span class="tooltip"><img src="images/Cloth7_4.jpg" alt="图标信息" />鹤雪等级1<br />普通装备 时装<br />装备简介:璇玑玉脂融入鹤血所制，威力无比，武当镇派之宝，武当派高级时装</span><a href="###" class="chufa" title=""><img src="images/41X41_img.png" alt="图标信息" /></a></td>
+                           <td><a href="###" title="相关信息" target="_blank">武者之刃</a></td>
+                           <td>15</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td>绿色装备</td>
+                           <td>普通装备</td>
+                           <td >30</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td >20</td>
+                           <td >0</td>
+                           <td >0</td>
+                           </tr>
+                           <tr>
+                           <td class="icon"><span class="tooltip"><img src="images/Cloth7_4.jpg" alt="图标信息" />鹤雪等级1<br />普通装备 时装<br />装备简介:璇玑玉脂融入鹤血所制，威力无比，武当镇派之宝，武当派高级时装</span><a href="###" class="chufa" title=""><img src="images/41X41_img.png" alt="图标信息" /></a></td>
+                           <td><a href="###" title="相关信息" target="_blank">武者之刃</a></td>
+                           <td>15</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td>绿色装备</td>
+                           <td>普通装备</td>
+                           <td >30</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td >20</td>
+                           <td >0</td>
+                           <td >0</td>
+                           </tr>
+                           <tr>
+                           <td class="icon"><span class="tooltip"><img src="images/Cloth7_4.jpg" alt="图标信息" />鹤雪等级1<br />普通装备 时装<br />装备简介:璇玑玉脂融入鹤血所制，威力无比，武当镇派之宝，武当派高级时装</span><a href="###" class="chufa" title=""><img src="images/41X41_img.png" alt="图标信息" /></a></td>
+                           <td><a href="###" title="相关信息" target="_blank">武者之刃</a></td>
+                           <td>15</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td>绿色装备</td>
+                           <td>普通装备</td>
+                           <td >30</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td >20</td>
+                           <td >0</td>
+                           <td >0</td>
+                           </tr>
+                           <tr>
+                           <td class="icon"><span class="tooltip"><img src="images/Cloth7_4.jpg" alt="图标信息" />鹤雪等级1<br />普通装备 时装<br />装备简介:璇玑玉脂融入鹤血所制，威力无比，武当镇派之宝，武当派高级时装</span><a href="###" class="chufa" title=""><img src="images/41X41_img.png" alt="图标信息" /></a></td>
+                           <td><a href="###" title="相关信息" target="_blank">武者之刃</a></td>
+                           <td>15</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td>绿色装备</td>
+                           <td>普通装备</td>
+                           <td >30</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td >20</td>
+                           <td >0</td>
+                           <td >0</td>
+                           </tr>
+                           <tr>
+                           <td class="icon"><span class="tooltip"><img src="images/Cloth7_4.jpg" alt="图标信息" />鹤雪等级1<br />普通装备 时装<br />装备简介:璇玑玉脂融入鹤血所制，威力无比，武当镇派之宝，武当派高级时装</span><a href="###" class="chufa" title=""><img src="images/41X41_img.png" alt="图标信息" /></a></td>
+                           <td><a href="###" title="相关信息" target="_blank">武者之刃</a></td>
+                           <td>15</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td>绿色装备</td>
+                           <td>普通装备</td>
+                           <td >30</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td >20</td>
+                           <td >0</td>
+                           <td >0</td>
+                           </tr>
+                           <tr>
+                           <td class="icon"><span class="tooltip"><img src="images/Cloth7_4.jpg" alt="图标信息" />鹤雪等级2b<br />普通装备 时装<br />装备简介:璇玑玉脂融入鹤血所制，威力无比，武当镇派之宝，武当派高级时装</span><a href="###" class="chufa" title=""><img src="images/41X41_img.png" alt="图标信息" /></a></td>
+                           <td><a href="###" title="相关信息" target="_blank">武者之刃</a></td>
+                           <td>15</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td>绿色装备</td>
+                           <td>普通装备</td>
+                           <td >30</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td >20</td>
+                           <td >0</td>
+                           <td >0</td>
+                           </tr>                        
+                           <tr>
+                           <td class="icon"><span class="tooltip"><img src="images/Cloth7_4.jpg" alt="图标信息" />鹤雪等级2b<br />普通装备 时装<br />装备简介:璇玑玉脂融入鹤血所制，威力无比，武当镇派之宝，武当派高级时装</span><a href="###" class="chufa" title=""><img src="images/41X41_img.png" alt="图标信息" /></a></td>
+                           <td><a href="###" title="相关信息" target="_blank">武者之刃</a></td>
+                           <td>15</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td>绿色装备</td>
+                           <td>普通装备</td>
+                           <td >30</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td >20</td>
+                           <td >0</td>
+                           <td >0</td>
+                           </tr>
+                           <tr>
+                           <td class="icon"><span class="tooltip"><img src="images/Cloth7_4.jpg" alt="图标信息" />鹤雪等级2b<br />普通装备 时装<br />装备简介:璇玑玉脂融入鹤血所制，威力无比，武当镇派之宝，武当派高级时装</span><a href="###" class="chufa" title=""><img src="images/41X41_img.png" alt="图标信息" /></a></td>
+                           <td><a href="###" title="相关信息" target="_blank">武者之刃</a></td>
+                           <td>15</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td>绿色装备</td>
+                           <td>普通装备</td>
+                           <td >30</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td >20</td>
+                           <td >0</td>
+                           <td >0</td>
+                           </tr>
+                           <tr>
+                           <td class="icon"><span class="tooltip"><img src="images/Cloth7_4.jpg" alt="图标信息" />鹤雪等级2b<br />普通装备 时装<br />装备简介:璇玑玉脂融入鹤血所制，威力无比，武当镇派之宝，武当派高级时装</span><a href="###" class="chufa" title=""><img src="images/41X41_img.png" alt="图标信息" /></a></td>
+                           <td><a href="###" title="相关信息" target="_blank">武者之刃</a></td>
+                           <td>15</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td>绿色装备</td>
+                           <td>普通装备</td>
+                           <td >30</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td >20</td>
+                           <td >0</td>
+                           <td >0</td>
+                           </tr>
+                           <tr>
+                           <td class="icon"><span class="tooltip"><img src="images/Cloth7_4.jpg" alt="图标信息" />鹤雪等级2b<br />普通装备 时装<br />装备简介:璇玑玉脂融入鹤血所制，威力无比，武当镇派之宝，武当派高级时装</span><a href="###" class="chufa" title=""><img src="images/41X41_img.png" alt="图标信息" /></a></td>
+                           <td><a href="###" title="相关信息" target="_blank">武者之刃</a></td>
+                           <td>15</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td>绿色装备</td>
+                           <td>普通装备</td>
+                           <td >30</td>
+                           <td >0</td>
+                           <td >0</td>
+                           <td >20</td>
+                           <td >0</td>
+                           <td >0</td>
+                           </tr>
+                       </tbody>                           
+               </table>
+           </div>
+           <h4><span>当前第1页，共9736条记录</span><strong><a href="##">&lt;</a><a href="##">1</a>|<a href="##">2</a> <a href="##">3</a> <a href="##">4</a> <a href="##">5</a> <a href="##">6</a> <a href="##">7</a> <a href="##">8</a> <a href="##">9</a> <a href="##">10</a> <a href="##">11</a>|<a href="##">25</a><a href="##">&gt;</a></strong></h4>
+      </div>
+  </div>
+  </div>
+  </div>
+</div>
+<div id="footer">
+  <div id="footerMenu">               
+       <ul>
+         <li><a href="##" title="客服中心">客服中心</a></li>
+         <li><a href="##" title="爱游小游戏">爱游小游戏</a></li>
+         <li><a href="##" title="网页游戏">网页游戏</a></li>
+         <li class="none"><a href="##" title="商务合作">商务合作</a></li>
+       </ul>
+  </div>
+  <p>健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活 </p>
+  <p>CopyRight &copy; 2010-2013 爱游网 aiyou.com All Rights Reserved <a target="_blank" href="http://www.aiyou.com/newsdetail_20_0_11151.html">未成年人家长监护工程</a>  </p>
+  <p>无锡新游网络科技有限公司 沪ICP备07029882号 经营许可证编号：苏B2-2009009 文网文编号：苏网文[2010]0389-001</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+.clear{ clear:both; height:1px; visibility:hidden;}
+ul,li{margin:0px; padding:0px;list-style:none;}
+.clear{clear:both;height:0px;font-size:0px;line-height:0px; visibility:hidden;}
+img{border:none;}
+body,html{ margin:0px; padding:0px; background:#fff; font-family:Tahoma,Verdana,"宋体";}
+#wrapper{position:relative; margin:0px auto 0px auto; padding:0px;clear:both; width:100%; text-align:left;overflow:hidden; background:#fff;}
+#top_link{width:100%;clear:both;height:30px;border-bottom:1px solid #FCDABF;line-height:30px; color:#333; font-family:"宋体",Arial, Helvetica, sans-serif; font-size:12px; background:#fffaee;}
+#top_link a{color:#2201ca;text-decoration:none;margin:0 5px;}
+#top_link a:link,#top_link a:visited{color:#333;text-decoration:none;margin:0 5px;}
+#top_link a:hover{ color:#000; text-decoration:underline;margin:0 5px;}
+#top_link .left{float:left;height:30px;line-height:30px;padding:0 0 0 25px; text-align:left; background:url(avataronline.gif) no-repeat scroll 8px 40%}
+#top_link .left a{color:#333;text-decoration:none;margin:0 3px; background:none;}
+#top_link .left a:link,#top_link.left a:visited{color:#333;text-decoration:none;margin:0 3px;}
+#top_link .left a:hover{color:#000; text-decoration:underline;margin:0 3px;}
+#top_link span{ background:url(frame_on.gif) no-repeat scroll 1px 40%;margin:0 5px; padding-left:15px;height:30px;line-height:30px;}
+#top_link .right{float:right;height:30px;line-height:30px;color:#2201ca;padding:0 10px 0 0;}
+#container{position:relative;margin:0px auto 0px auto; padding:0;clear:both; width:960px; text-align:left;overflow:hidden;background:#E4E5E1 url(h_x.jpg) no-repeat left bottom;}
+#banner{ width:960px; height:96px; margin:0; padding:0; background:#fff;}
+#banner .logo{ width:488px; height:96px; margin:0 81px 0 0; padding:0; float:left; background:url(logo_bg.jpg) left top no-repeat;}
+#banner .logo ul{ list-style:none; margin:0px; padding:0px 0px 0px 5px;}
+#banner .logo li{color:#3E2D28; font-size:14px; padding:0; margin:6px 0 4px 0;}
+#banner .logo li h1{ font-family:"微软雅黑",Arial, Helvetica, sans-serif; font-size:28px; font-weight:bold; margin:5px 0px 3px 156px;}
+#banner .logo li span{ font-size:18px; font-family:"宋体",Arial, Helvetica; font-weight:bold; margin:15px 0px 25px 154px; color:#FF6600;}
+#banner .logo li a{color:#333;text-decoration:none;margin:0 1px; background:none;}
+#banner .logo li a:link,#banner .logo li a:visited{color:#333;text-decoration:none;margin:0 1px;}
+#banner .logo li a:hover{color:#000; text-decoration:underline;margin:0 1px;}
+#banner .anniu{width:388px; height:96px; margin:0px; float:left;}
+#banner .anniu input{margin:15px 0px 0 8px; float:right;display:block;}
+#banner .anniu .txt{ clear:both; margin:0px; position:relative; font-size:14px; color:#333; text-align:right; padding:42px 2px 0 0;}
+#banner .anniu .txt a{color:#333;text-decoration:none;margin:0 1px; background:none;}
+#banner .anniu .txt a:link,#banner .anniu .txt a:visited{color:#333;text-decoration:none;margin:0 1px;}
+#banner .anniu .txt a:hover{color:#000; text-decoration:underline;margin:0 1px;}
+#banner .ztimg{background:url(banner1.jpg) no-repeat; line-height:15px; width:960px; height:137px; padding:0; margin:0; z-index:0;}
+#block{ border:none;color:#FFF;padding:2px;width:238px;position:absolute;/*absolute绝对定位*/left:712px;top:101px;line-height:14px;/*块的左边与顶端与页面的边*/z-index:1;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;}
+#hander{width:960px; margin:0;padding:0px; clear:both; background:#F4F4F2; border-left:1px solid #fff;}/*#CECFC7;*/
+#han{ width:960px; height:14px; background:#fff;  margin:0;padding:0px;}
+#leftbar{ position:relative;float:left; text-align:left; padding:0; width:212px;margin:0px;}
+#authar{ width:212px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:14px;margin:0;}
+#authar .left_muen{ width:187px; height:25px;  margin:0px; text-align:left; font-size:14px; font-weight:bold; background:url(muen_left.jpg) no-repeat; padding:8px 0 0 25px; display:block;}
+
+#authar ul{list-style:none; margin:0px; padding:0px; text-align:left;}
+#authar ul li{border-bottom:1px solid #C8C9C1;border-left:1px solid #C8C9C1; border-right:1px solid #C8C9C1; border-top:1px solid #fff; text-indent:15px;}
+#authar ul li a{display:block; padding:7px 3px 7px 15px;text-decoration:none; background:#ecede8 url(gif-0481.gif) no-repeat 12px 11px;}
+#authar ul li a:link,#authar ul li a:visited{background:#ecede8 url(gif-0481.gif) no-repeat 12px 11px;color:#333; text-decoration:none;}
+#authar ul li a:hover{color:#333; text-decoration:underline;background:#fbfbfa url(gif-0481.gif) no-repeat 12px 11px;}
+
+#content{position:relative;float:left;width:727px; margin:0; padding:0 0 0 19px; background:#fff;border-left:1px solid #fff;}/*#CECFC7;*/
+#content .bt{height:18px; margin:0; padding:0 2px 0px 2px;border-bottom:1px solid #FCDABF; font-family:"宋体",Arial, Helvetica, sans-serif; margin:0 0 20px 0; }
+#content .bt h1{ height:18px;font-size:14px; text-align:left; font-weight:bold; color:#333; margin:0 0 -1px 3px; padding:0; float:left}
+#content .bt span{ font-size:12px;height:18px;text-align:left;color:#333; font-family:Tahoma; font-weight:bold; margin:0 3px 0 0; padding:0; float:right;}
+#content p{ font-size:14px; color:#FF7300; font-weight:bold; margin-left:5px;}
+#content .p2{font-size:12px; color:#333;margin:0 5px 0 7px; font-weight:normal; line-height:25px; text-indent:15px;}
+#content .p4{font-size:12px; color:#333;margin:12px 5px 0 7px; font-weight:normal; line-height:25px; text-indent:15px;}
+#content h2{font-size:14px; text-align:left; font-weight:bold; color:#333; margin:6px 0 6px 2px;}
+#content .p3{font-size:12px; color:#FF7300;margin:0 5px 0 7px; font-weight:bold;line-height:14px;}
+#content .p5{ font-size:14px; color:#FF7300; font-weight:bold; margin-left:15px;}
+#content .p6{ font-size:14px; color:#333; font-weight:100; margin:0 15px 12px 15px; line-height:35px; text-indent:5px;}
+#content .p6 span{color:#FF7300; font-weight:bold;}
+#jianp{background:url(about%20us1.jpg) no-repeat top right;width:716px; height:216px; padding:0px; margin:0 10px 13px 0; display:block; text-align:left;}
+#content .cp-fw{width:716px; padding:0px; margin:0 12px 21px 0; display:block; text-align:left; font-size:12px; color:#333;}
+#content .cp-fw ul{font-size:12px; color:#333;margin:15px 0 0 12px;}
+#content .cp-fw ul li{font-size:12px; color:#333; vertical-align:text-bottom; line-height:18px;}
+#content .cp-fw ul li img{ width:42px; height:37px; padding:0; margin:0 18px 0 0; float:left; background-position:top;}
+#content .cp-fw ul li span{ color:#0000FF; text-decoration:underline; font-weight:normal;}
+
+#content .lx{ font-family:Tahoma,Verdana,"宋体";width:716px; padding:0px; margin:0 12px 28px 0; display:block; text-align:left; font-size:14px; color:#333;}
+#content .lx ul{font-size:12px; color:#333;margin:15px 0 0 18px;}
+#content .lx ul li{font-size:14px; color:#333; vertical-align:text-bottom; line-height:18px; text-indent:10px;}
+#content .lx ul li img{ width:42px; height:37px; padding:0; margin:0 18px 0 0; float:left; background-position:top;}
+#content .lx ul li span{ color:#000; text-decoration:underline; font-weight:100;font-family:Tahoma,Verdana,"宋体";}
+#content .lx ul li .txt{ font-size:12px; color:#333; font-weight:100;}/*#4C83BE*/
+#content .lx ul li .txt a{font-size:12px; color:#4C83BE; font-weight:100;}
+#content .lx ul li .txt a:link,#content .lx ul li .txt a:visited{font-size:12px; color:#4C83BE; font-weight:100;}
+#content .lx ul li .txt a:hover{font-size:12px; color:#4C83BE; font-weight:100; text-decoration:underline;}
+#content .lx ul li .txt input{ vertical-align:middle; margin:0 10px 0 10px; padding:0;}
+#content .lx ul li .txt span{font-size:12px; color:#666; font-weight:100; text-decoration:none;}
+#content .lx ul li input{vertical-align:middle; margin:0 10px 0 10px; padding:0;}
+#content .qy{ width:675px; padding:0; margin:4px 0 18px 17px;}
+
+#content table coption{ caption-side:bottom;}
+#content .datalist{ margin:10px 0 35px 18px;color:#333; background-color:#EFECE9; font-family:"宋体"Arial, Helvetica, sans-serif;text-indent :3px;border-collapse:collapse;}
+#content .datalist caption{ font-size:14px; font-weight:bold; line-height:18px; }
+#content .datalist tr.altrow{background-color:#fff;}/*隔行变色*/
+#content .datalist td{margin:0px; padding:0 10px 0 3px; border:1px solid #e4e5e1;}
+#content .datalist th{text-indent:5px; height:25px; border-top:1px #e4e5e1 solid;border-right:1px #e4e5e1 solid;border-left:1px #e4e5e1 solid;border-bottom:1px #e4e5e1 solid; padding:0 15px 0 0; }
+
+
+#content .p3 ul{list-style:none; padding:0px; margin:5px 0px 10px 10px; font-family:"宋体",Arial, Helvetica, sans-serif; font-size:12px;
+width:390px; font-weight:normal;}
+#content .p3 li{text-align:left; padding:8px 0 2px 0;margin-bottom:6px;}
+#content .p3 img{ float:left; border:none; padding:0 9px 0 9px; margin:12px 0 18px 0;}
+#content .dt{font-size:14px; text-align:left; font-weight:normal; color:#333; margin:8px 12px 17px 2px; line-height:25px;}
+#content ul{list-style:none; padding:0px; margin:25px 0px 0 10px; font-family:"宋体",Arial, Helvetica, sans-serif; font-size:14px;}
+#content ul li{ margin-bottom:10px; text-align:left;}
+#content ul li p{font-weight:bold;color:#333; margin:0; padding:0;}
+#content ul li span{ color:#FF6600; font-weight:bold;}
+#footer{
+position: relative;
+margin-top: 30px; /* footer高度的负值 */
+height:114px;/* footer高度*/
+width:100%;
+min-width:960px;/*最小宽度ie6中加JS解决*/
+clear:both; border-top:3px solid #FFBD0D;
+text-align:center;
+color:#999; background:#fff; font-size:12px;
+}
+#infoot{height:94px;line-height:94px;width:960px;margin:0 auto;background:#fff; background-position:center;
+padding:15px 0 0 0;}
+#infoot a{color:#666;text-decoration:none;margin:0 1px; padding:0 12px 0 12px; background:none;}
+#infoot a:link,#infoot a:visited{color:#333;text-decoration:none;margin:0 1px;}
+#infoot a:hover{color:#000; text-decoration:underline;margin:0 1px;}
+#footer p{line-height:26px;}
+/*说明: 需要注意的就是#main的padding值、footer的高度和负margin值，需要保持一致。下面是著名的万能float闭合Clearfix Hack*/
+-->
+
+.zfzd_con{width:720px;margin:0 auto;}
+.pic_zfzd{width:300px;float:left; display:inline;margin-bottom:10px;height:304px;}
+.pic_zfzd img{width:300px;height:300px;*border-top:1px solid #999;*border-bottom:1px solid #999;}
+.mar_add{margin-right:80px;}
+.zf_pic{position:absolute;top:-70px;right:100px;}
+#content dt{width:720px; height:25px; line-height:25px; background:url(tit_bg.jpg) 120px center no-repeat;margin-bottom:10px;}
+.ye_ti{color:#f60;font-size:20px;font-weight:bold; margin-right:10px;}
+.bl_ti{color:#0e5fcb;font-weight:bold;font-size:14px;}
+.wr_ti{color:#fff;font-weight:bold;font-size:14px;margin-left:12px;}
+#content dd{line-height:25px;font-size:14px;margin:5px 0;}
+.sccl_bg{width:700px; height:420px; margin:50px auto 0 auto; background:url(sccl_bg.jpg) center no-repeat;}

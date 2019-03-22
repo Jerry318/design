@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>宜佳公司--无锡市宜佳人力资源有限公司--无锡市宜佳后勤服务有限公司</title>
+<link rel="stylesheet" href="css/yiji_style.css" />
+<script src="scripts/jquery-1.3.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(function(){
+	    var $div_li =$("div.tab_qyfc ul li");
+	    $div_li.click(function(){
+			$(this).addClass("selected")            //当前<li>元素高亮
+				   .siblings().removeClass("selected");  //去掉其它同辈<li>元素的高亮
+            var index =  $div_li.index(this);  // 获取当前点击的<li>元素 在 全部li元素中的索引。
+			$("div.qyfc_box > div")   	//选取子节点。不选取子节点的话，会引起错误。如果里面还有div 
+					.eq(index).show()   //显示 <li>元素对应的<div>元素
+					.siblings().hide(); //隐藏其它几个同辈的<div>元素
+		}).hover(function(){
+			$(this).addClass("hover");
+		},function(){
+			$(this).removeClass("hover");
+		})
+	})
+//]]>
+</script>
+</head>
+
+<body>
+  <div id="maxbox">
+      <div id="container">
+          <h1 title="宜佳公司欢迎您"><span>宜佳公司 无锡市宜佳人力资源有限公司 无锡市宜佳后勤服务有限公司</span></h1>
+          <div class="topMenu">
+            <ul>
+              <li class="none"><a href="#">加入收藏</a></li>
+              <li><a href="#">设为首页</a></li>
+            </ul>
+          </div>
+          <div class="Phone"><span>0510-85220729</span></div>
+          <div class="kong"></div>
+          <!-- 导航开始  -->
+        <div id="menu">
+           <div>
+              <ul id="topnav">
+                <li><a class="home" href="index.html">首页</a></li>
+                <li>
+                  <a class="gsgk" href="gsgk.html">公司概况</a>
+                  <div class="sub">
+                  <ul>
+                    <li><a href="qyjj.html">企业简介</a></li>
+                    <li><a href="qywh.html">企业文化</a></li>
+                    <li><a href="qyfc.html">企业风采</a></li>
+                    <li><a href="zlry.html">资历荣誉</a></li>
+                  </ul>
+                  </div>
+                </li>
+                <li>
+                    <a class="news" href="news.html">新闻中心</a>
+                   <div class="sub">
+                   <ul>
+                    <li><a href="hyzx.html">行业资讯</a></li>
+                    <li><a href="qydt.html">企业动态</a></li>
+                    <li><a href="zcfg.html">政策法规</a></li>
+                   </ul>
+                   </div>
+                </li>
+                <li>
+                   <a class="rlzy" href="rlzy.html">人力资源服务</a>
+                   <div class="sub">
+                   <ul>
+                     <li><a href="lwpq.html">劳务派遣</a></li>
+                     <li><a href="zyjs.html">职业介绍</a></li>
+                   </ul>
+                   </div>
+                </li>
+                <li>
+                   <a class="hqfw" href="hqfw.html">后勤服务</a>
+                   <div class="sub">
+                   <ul>
+                    <li><a href="fwms.html">服务模式</a></li>
+                    <li><a href="wygl.html">物业管理</a></li>
+                    <li><a href="ygss.html">员工宿舍</a></li>
+                    <li><a href="ygst.html">员工食堂</a></li>
+                    <li><a href="gwcs.html">购物超市</a></li>
+                    <li><a href="ydcs.html">运动场所</a></li>
+                  </ul>
+                  </div>
+                </li>
+                <li><a class="fwwl" href="fwwl.html">服务网络</a></li>
+                <li><a class="rczp" href="rczp.html">人才招聘</a></li>
+                <li><a class="lxwm" href="lxwm.html">联系我们</a></li>
+              </ul>
+           </div>
+        </div> 
+        <!-- 导航结束  -->
+        
+        <!-- 主体内容开始  -->
+        
+        <div id="content">
+        <!-- 左边开始  -->
+       
+          <div class="leftList">
+            <div class="wangrui">
+              <h2>宜家公告</h2>
+              <div class="content">
+                <p><img src="images/img1.jpg" /><span>宜佳春季摄影</span></p>
+                <ul>
+                  <li><a href="">宜佳春季摄影比赛成绩公告…</a></li>
+                  <li><a href="">宜佳年会活动比赛公告…</a></li>
+                  <li><a href="">宜佳年会活动比赛公告…</a></li>
+                </ul>
+              </div>
+              
+            </div>
+              <div class="wangrui">
+              <h2 class="left">服务项目</h2>
+              <div class="content">
+                <div class="fwxm" title="劳务派遣"><a href="lwpq.html">劳务派遣</a></div>
+                <div class="fwxm" title="职业介绍"><a class="zy" href="zyjs.html">职业介绍</a></div>
+                <div class="fwxm" title="宿舍租赁"><a class="ss" href="sszp.html">宿舍租赁</a></div>
+              </div>
+             </div>
+            <div class="wangrui">
+              <h2 class="left">服务模式</h2>
+              <div class="content">
+                <div class="fwms" title="服务模式"><a href="fwms.html">服务模式</a></div>
+              </div>
+             
+            </div>
+          </div>
+          <!-- 左边结束  -->
+          
+          <!-- 右边开始  -->
+          <div class="rightBox">
+             <div class="tongYongBox">
+               <h2>宜佳人才招聘</h2>
+               <div class="content">
+                    <div class="tab_qyfc">
+                      <ul>
+                        <li class="selected">宜佳招聘公司信息</li>
+                       <!--<li>班车服务</li>
+                       <li>过年包车回家</li>-->
+                        
+                      </ul>
+                    </div> 
+                    
+                <div class="qyfc_box">
+                        <div>
+                            <p><br /></p>
+                            <h5 class="lwpq">招聘公司信息列表 </h5>
+                            
+                           <p><span>1.松下压缩机：</span></p> 
+                           <p>男女不限，18—35周岁，12小时，上四休二，固定工资1330元+中夜班费，综合收入2000—2800元，有厂车，学生可安排免费住宿。厂车遍布无锡。</p>
+                           <p><span>2.天原物流：</span></p> 
+                           <p>男，18—48周岁，12小时，双休，固定薪资1680元+中夜班费，到手工资2000元以上，另招女清洁工，50岁以下，长白班，双休1300元，厂车途径芦庄，春潮，                            春丰，也可安排住宿，约150---200元/月，因扩大需招500名男工，请各位贤友多多帮忙！</p>
+                           <p><span>3.曙光模具：</span></p> 
+                           <p>男，18---40周岁，12小时，双休，厂车经过山北，河埒口，刘潭，春潮，春丰等。综合工资2000以上。</p>
+                           <p><span>4.英莳精密：</span></p> 
+                           <p>男，18---35周岁，上4休2，交6金，综合工资2000以上，有厂车。</p>
+                           <p><span>5.冠德光电：</span></p> 
+                           <p>男18---40周岁，12小时两班倒，试用期过后综合工资不低于2000元。</p>
+                            <p><span>6.众赫电子：</span></p> 
+                           <p>男女不限，18---30周岁，初中文化以上，电子、机电专业优先。不穿太服，上5休2，交六金，综合工资2000以上。厂车遍布无锡。</p>
+                            <p><span>7.威孚精机：</span></p>
+                            <p>男18---35周岁，机电、机械等专业优先。能吃苦，工资2500元左右，交6金，有厂车。</p>
+                               <p><span>8.宏达热处理：</span></p>
+                            <p>男35周岁以下，高中以上学历，能吃苦，机电、机械等专业优先。正式工资2500元，交7金，上4休2可提供住宿，厂车经过春丰，春潮，市区，长江路等。</p>
+                            
+                            <p><span>9.华阳科技：</span></p>
+                            <p>女，高中以上学历，能吃苦，正式工资2000-2200元，可提供免费住宿。</p>
+                            <p><span>10.松下冷机：</span></p>
+                            <p>男女不限，18—35周岁，有12小时、8小时工作作制，双休，厂车遍布无锡，固定工资1340元+中夜班补贴，综合工资2000元以上，学生可安排免费住宿。</p>
+                             <p><br /></p>
+                        </div>
+                        
+                       <!--<div class="hide">
+                        <p><br /></p>
+                            <h5 class="lwpq">班车服务</h5>
+                             <p>我们提供豪华舒适的大巴车接送服务，确保员工安全准时上下班，满足工厂生产需要。<img class="left" src="images/banche.png" alt="" /></p>
+                              
+                        </div>
+                        
+                     <div class="hide">
+                        <p><br /></p>
+                            <h5 class="lwpq">过年包车回家</h5>
+                        <p>我们提供豪华舒适的大巴车过年包车回家服务，上保险确保旅途安全出行，满足外来务工人员的需要。 <img class="left" src="images/banche.png" alt="" /></p>
+                        
+                        </div>-->
+                        
+                                        
+                    </div> 
+                <div class="clear"></div>       
+               </div>            
+             </div>
+          </div>
+          <!-- 右边结束 -->
+          <div class="clear"></div>
+        </div> 
+        <!-- 主体内容结束 --> 
+        <!-- 下导航开始 --> 
+        <div class="footerMenu">
+            <ul>
+              <li class="none"><a href="index.html">首页</a></li>
+              <li><a href="gsgk.html">公司概况</a></li>
+              <li><a href="news.html">新闻中心</a></li>
+              <li><a href="rlzy.html">人力资源服务</a></li>
+              <li><a href="hqfw.html">后勤服务</a></li>
+              <li><a href="fwwl.html">服务网络</a></li>
+              <li><a href="rczp.html">人才招聘</a></li>
+              <li><a href="lxwm.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!-- 下导航结束 --> 
+        <!-- 脚部内容开始 -->
+        <div class="footerBox">
+         <p><span>建议请使用IE7及以上版本，火狐，谷歌，Safari浏览器进行浏览以确保正常显示内容</span></p>
+         <p>版权所有：无锡市宜佳人力资源有限公司，无锡市宜佳后勤服务有限公司   地 址：无锡市新区汉江路5号新区交警大队院内1幢406室<br/>   
+            联系电话：( 单位招聘 )：13003338159、18912391947钟小姐   ( 个人求职) ：0510—85220729；85220927</p>
+        </div>
+        <!-- 脚部内容结束 -->
+      </div>
+  </div>
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+	
+
+	function megaHoverOver(){
+		$(this).find(".sub").stop().fadeTo('fast', 1).show();
+			
+		//Calculate width of all ul's
+		(function($) { 
+			jQuery.fn.calcSubWidth = function() {
+				rowWidth = 0;
+				//Calculate row
+				$(this).find("ul").each(function() {					
+					rowWidth += $(this).width(); 
+				});	
+			};
+		})(jQuery); 
+		
+		if ( $(this).find(".row").length > 0 ) { //If row exists...
+			var biggestRow = 0;	
+			//Calculate each row
+			$(this).find(".row").each(function() {							   
+				$(this).calcSubWidth();
+				//Find biggest row
+				if(rowWidth > biggestRow) {
+					biggestRow = rowWidth;
+				}
+			});
+			//Set width
+			$(this).find(".sub").css({'width' :biggestRow});
+			$(this).find(".row:last").css({'margin':'0'});
+			
+		} else { //If row does not exist...
+			
+			$(this).calcSubWidth();
+			//Set Width
+			$(this).find(".sub").css({'width' : rowWidth});
+			
+		}
+	}
+	
+	function megaHoverOut(){ 
+	  $(this).find(".sub").stop().fadeTo('fast', 0, function() {
+		  $(this).hide(); 
+	  });
+	}
+
+
+	var config = {    
+		 sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
+		 interval: 100, // number = milliseconds for onMouseOver polling interval    
+		 over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
+		 timeout: 500, // number = milliseconds delay before onMouseOut    
+		 out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
+	};
+
+	$("ul#topnav li .sub").css({'opacity':'0'});
+	$("ul#topnav li").hoverIntent(config);
+
+
+
+});
+
+//]]>
+</script>
+  
+</body>
+</html>

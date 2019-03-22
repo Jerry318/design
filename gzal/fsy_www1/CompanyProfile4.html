@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>富士懿数字科技</title>
+<link rel="stylesheet" type="text/css" href="style/Fancy-E.css" media="all" />
+<script type="text/javascript" src="script/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="script/slides.min.jquery.js"></script>
+<script type=text/javascript>
+//<![CDATA[
+$(function(){
+	$('#webmenu li').hover(function(){
+		$(this).children('ul').stop(true,true).show('slow');
+	},function(){
+		$(this).children('ul').stop(true,true).hide('slow');
+	});
+	
+	$('#webmenu li').hover(function(){
+		$(this).children('div').stop(true,true).show('slow');
+	},function(){
+		$(this).children('div').stop(true,true).hide('slow');
+	});
+	$("ul.second-menu li:last-child a").css("border-bottom","none");
+	$("ul.second-menu li:last-child a").addClass("Chamfer");
+	$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/loading.gif',
+				play: 4000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log(current);
+					};
+				}
+			});
+});
+//]]>
+</script>
+</head>
+
+<body>
+<div class="topModify"></div>
+<div class="headMiddle">
+    <h1 class="logo"><a href="##" title="富士懿数字科技">富士懿数字科技</a></h1>
+    <h2 class="Contact">服务热线：0510-85186565</h2>
+    <ul id="AddCollection"> 
+        <li><a href="##" title="">设为首页</a></li>
+        <li><a href="##" title="">添加收藏</a></li>
+    </ul>
+</div>
+<!--Navigation start-->
+<div id="Navigation">
+   <ul id="webmenu" class="first-menu">
+  <li><a href="index.html" class="home" target="_self">首页</a></li>
+  <li><a href="#" target="_self">公司概况</a>
+    <ul style="display:none;"  class="second-menu">
+      <li><a href="CompanyProfile1.html" class="arrow" target="_self">公司介绍</a></li> 
+      <li><a href="CompanyProfile2.html" class="arrow" target="_self">公司理念</a></li> 
+      <li><a href="CompanyProfile3.html" class="arrow" target="_self">荣誉证书</a></li>
+      <li><a href="CompanyProfile4.html" class="arrow" target="_self">联系方式</a></li>
+    </ul>
+   </li>
+    <li><a href="#" target="_self">新闻中心</a>
+    <ul style="display:none;"  class="second-menu">
+      <li><a href="NewsCenter1.html" class="arrow" target="_self">企业新闻</a></li> 
+      <li><a href="NewsCenter2.html" class="arrow" target="_self">业内新闻</a></li> 
+    </ul>
+   </li>
+   <li><a href="#" target="_self">解决方案</a>
+    <ul style="display:none;"  class="second-menu">
+      <li><a href="Solution1.html" class="arrow" target="_self">零售行业</a></li> 
+      <li><a href="Solution2.html" class="arrow" target="_self">餐饮行业</a></li>
+      <li><a href="Solution3.html" class="arrow" target="_self">影院行业</a></li> 
+      <li><a href="Solution4.html" class="arrow" target="_self">医疗行业</a></li> 
+      <li><a href="Solution5.html" class="arrow" target="_self">电信行业</a></li> 
+      <li><a href="Solution6.html" class="arrow" target="_self">政府行业</a></li>
+      <li><a href="Solution7.html" class="arrow" target="_self">金融行业</a></li>  
+      <li><a href="Solution8.html" class="arrow" target="_self">其它行业</a></li>  
+    </ul>
+   </li>
+   <li><a href="#" target="_self">产品中心</a>
+    <ul style="display:none;"  class="second-menu">
+      <li><a href="Products1.html" class="arrow" target="_self">3D全息投影</a></li> 
+      <li><a href="Products2.html" class="arrow" target="_self">透明屏</a></li>
+      <li><a href="Products3.html" class="arrow" target="_self">非标屏</a></li> 
+      <li><a href="Products4.html" class="arrow" target="_self">拼接屏</a></li> 
+      <li><a href="Products5.html" class="arrow" target="_self">广告机</a></li> 
+      <li><a href="Products6.html" class="arrow" target="_self">工业主机</a></li>
+      <li><a href="Products7.html" class="arrow" target="_self">POS机</a></li>  
+      <li><a href="Products8.html" class="arrow" target="_self">其它</a></li>  
+    </ul>
+   </li>
+  <li><a href="#" target="_self">加盟合作</a>
+    <ul style="display:none;"  class="second-menu">
+      <li><a href="Cooperation1.html" class="arrow" target="_self">渠道加盟</a></li> 
+      <li><a href="Cooperation2.html" class="arrow" target="_self">项目合作</a></li>
+      <li><a href="Cooperation3.html" class="arrow" target="_self">合作伙伴</a></li> 
+      <li><a href="Cooperation4.html" class="arrow" target="_self">工作机会</a></li> 
+    </ul>
+  </li>
+ <li><a href="CaseCenter.html" target="_self">案例中心</a></li> 
+  </ul>
+</div>
+<!--Navigation end-->
+<!--filmslide start-->
+       <div id="Slidebox">
+        <div id="example">
+			<div id="slides">
+            
+				<div class="slides_container">
+					<div class="slide">
+                    <div class="mask"></div>
+                    <img src="images/Slides1.png" alt="" />
+	                    <p class="translucent"></p>
+                        <p class="description"><a href="##" class="">此处添加你想要的链接地址</a></p>
+					</div>
+					<div class="slide">
+                    <div class="mask"></div>
+                    <img src="images/Slides2.png" alt="" />
+	                    <p class="translucent"></p>
+                        <p class="description"><a href="##" class="">此处添加你想要的链接地址</a></p>
+					</div>
+					<div class="slide">
+                    <div class="mask"></div>
+                    <img src="images/Slides3.png" alt="" />
+	                    <p class="translucent"></p>
+                        <p class="description"><a href="##" class="">此处添加你想要的链接地址</a></p>
+					</div>
+					<div class="slide">
+                    <div class="mask"></div>
+                    <img src="images/Slides1.png" alt="" />
+	                    <p class="translucent"></p>
+                        <p class="description"><a href="##" class="">此处添加你想要的链接地址</a></p>
+					</div>
+					
+				</div>
+				<a href="#" class="prev">Arrow Prev</a>
+				<a href="#" class="next">Arrow Next</a>
+			</div>
+            
+         </div>
+   </div>
+    <!--filmslide end-->
+     <!--ColumnsPage start-->
+    <div id="ColumnsPage">
+        <div class="columnTitle">
+             <div class="icon1"></div>
+              <div class="title">
+                <h1>关于<strong>我们</strong>公司</h1>
+                   <p>About Our Company</p>
+              </div>
+              <div class="titleText"> </div>
+        </div>
+        <div class="Columns">
+             <div class="contents  clearfix">
+              <!--ColumnsPageLeft start-->
+                  <div class="sidebar">
+                      <div class="topTitle">
+                           公司概况<strong>CompanyProfile</strong>                   
+                      </div>
+                      <div class="contentBox"> 
+                          <ul class="sidebarList">
+                          	<li><a href="CompanyProfile1.html" title="">公司介绍</a></li>
+                          	<li><a href="CompanyProfile2.html" title="">公司理念</a></li>
+                          	<li><a href="CompanyProfile3.html" title="">荣誉证书</a></li>
+                          	<li><a href="CompanyProfile4.html" title="" class="selected">联系方式</a></li>
+                          </ul>
+                      </div>
+                      <div class="topTitle">
+                           解决方案<strong>Solutions</strong>                   
+                      </div>
+                      <div class="contentBox contentBox2"> 
+                          <ul class="sidebarList2">
+                          	 <li><a href="Solution1.html"  target="_self">零售行业</a></li> 
+                          	 <li><a href="Solution2.html"  target="_self">餐饮行业</a></li>
+                          	 <li><a href="Solution3.html"  target="_self">影院行业</a></li> 
+                          	 <li><a href="Solution4.html"  target="_self">医疗行业</a></li> 
+                          	 <li><a href="Solution5.html"  target="_self">电信行业</a></li> 
+                          	 <li><a href="Solution6.html"  target="_self">政府行业</a></li>
+                          	 <li><a href="Solution7.html"  target="_self">金融行业</a></li>  
+                          	 <li><a href="Solution8.html"  target="_self">其它行业</a></li> 
+                          </ul>
+                      </div>
+                      
+                      <div class="mailSubmit">
+                         <div class="MailIcon"></div>
+                         <h2>与我们保持联系！</h2>
+                         <p>如果你愿意，请输入你的邮箱地址订阅我们相关信息！</p>
+                         <form action="" method="post" class="SubmittedInput">
+                           <input type="text" name="mail" id="mail" class="mail" />
+                           <input type="submit" name="Sub" id="Sub" />
+                         </form>
+                      </div>
+                  </div>
+              <!--ColumnsPageLeft end-->  
+              
+               <!--ColumnsPageRight start-->
+                <div class="RightContent">
+                 <div class="topTitle">
+                    <strong>当前位置：</strong>联系方式
+                 </div>
+                 <div class="Description">
+                 <p><strong>无锡富士懿数字科技有限公司（Wuxi Fancy-E Digital Technology Co., Ltd.）</strong><br />位于滨湖区山水科教产业园。自2010年10月成立以来，公司秉承"引领技术之先，传承优质服务"的理念，本着"开拓创新，永无止境"的精神，致力于数字标牌行业的研发、生产、销售与服务。</p><img src="images/OfficeOfTheScene.png" class="" alt="" />
+    <p> 我们聚焦行业细分市场，探索O2O（Online To Offline）的商业模式，率先推出了餐饮行业会员营销预点餐系统，与零售业数字化营销系统，将电子商务平台与线下的实体终端设备，以及餐饮、零售企业的营运与营销紧密结合起来，为企业提供整体数字化营销解决方案。</p><p> 是专注于提供行业信息化解决方案、软硬件产品及IT服务的高科技企业。公司产品及服务以餐饮行业信息化建设为主，并涉及零售、院线、医药等行业的计算机相关硬件解决方案，我们所提供的产品包括：触摸屏一体POS及相关外设、无线移动POS、电子菜单、嵌入式主机、大屏幕显示器、数字标牌系统及行业应用软件系统等。</p><p>在餐饮业信息化建设方面，我们结合了国内外先进电子设备的应用经验，在传统触摸屏点餐下单的基础上，提出了前厅多媒体自助式查询展示、包间内电视点餐、散台电子菜单点餐、服务员手持电子终端设备下单、后厨KDS系统替代传统厨房打印等全方位的数字化餐饮整体解决方案。</p><p>在产品方面，我们与IBM、Wincor、NCR、NEC、PAR等国际知名硬件厂家，以及Partner、Posiflex、Senor、NEXCOM等台湾硬件厂家，以及国内外知名软件公司都建立了良好的合作关系。近期我们将推出自行设计、研发的基于ARM构架的E-Menu产品。</p><p></p>
+                 </div>     
+                </div>  
+              <!--ColumnsPageRight end-->   
+             </div>
+        </div>
+    </div>
+    <!--ColumnsPage end--> 
+    <!--Footer start-->
+     <div id="footer">
+            <ul class="listMenu">
+             <li><a href="##" title="联系我们">联系我们</a></li>
+             <li>|</li>
+             <li><a href="##" title="招贤纳士">招贤纳士</a></li>
+             <li>|</li>
+             <li><a href="##" title="网站地图">网站地图</a></li>
+            </ul>
+        <div class="inner">
+                 <p class="fonts">
+                   <span>
+                   Copyright ©2011 Fancy-e All rights reserved.
+                  公司地址：江苏省无锡市滨湖区锦溪路100号3号楼201室　214125 <br />
+                  电话：0510-85186565 传真：0510-85186765
+                  </span>
+                  </p>
+         </div>   
+     </div>
+    <!--Footer end-->
+</body>
+</html>

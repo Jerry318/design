@@ -1,0 +1,861 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>不锈钢天地－资讯</title>
+<link type="text/css" rel="stylesheet" href="inc/style.css" />
+<script type="text/javascript" src="inc/sz_show.js" language="javascript"> </script>
+<script type="text/javascript">
+function $(id){ return document.getElementById(id); }
+function moveElement(elementID,final_x,final_y,interval) {
+  if (!document.getElementById) return false;
+  if (!document.getElementById(elementID)) return false;
+  var elem = document.getElementById(elementID);
+  if (elem.movement) {
+    clearTimeout(elem.movement);
+  }
+  if (!elem.style.left) {
+    elem.style.left = "0px";
+  }
+  if (!elem.style.top) {
+    elem.style.top = "0px";
+  }
+  var xpos = parseInt(elem.style.left);
+  var ypos = parseInt(elem.style.top);
+  if (xpos == final_x && ypos == final_y) {
+  return true;
+  }
+  if (xpos < final_x) {
+    var dist = Math.ceil((final_x - xpos)/10);
+    xpos = xpos + dist;
+  }
+  if (xpos > final_x) {
+    var dist = Math.ceil((xpos - final_x)/10);
+    xpos = xpos - dist;
+  }
+  if (ypos < final_y) {
+    var dist = Math.ceil((final_y - ypos)/10);
+    ypos = ypos + dist;
+  }
+  if (ypos > final_y) {
+    var dist = Math.ceil((ypos - final_y)/10);
+    ypos = ypos - dist;
+  }
+  elem.style.left = xpos + "px";
+  elem.style.top = ypos + "px";
+  var repeat = "moveElement('"+elementID+"',"+final_x+","+final_y+","+interval+")";
+  elem.movement = setTimeout(repeat,interval);
+}
+function classNormal(){
+ var focusBtnList = $('focus_change_btn').getElementsByTagName('li');
+ for(var i=0; i<focusBtnList.length; i++) {
+  focusBtnList[i].className='';
+ }
+}
+function focusChange() {
+ var focusBtnList = $('focus_change_btn').getElementsByTagName('li');
+  focusBtnList[0].onmouseover = function() {
+   moveElement('focus_change_list',0,0,5);
+   classNormal()
+   focusBtnList[0].className='current';
+   document.getElementById("focus").innerHTML="图片1";
+  }
+  focusBtnList[1].onmouseover = function() {
+   moveElement('focus_change_list',-245,0,5);
+   classNormal()
+   focusBtnList[1].className='current';
+   document.getElementById("focus").innerHTML="图片2";
+  }
+  focusBtnList[2].onmouseover = function() {
+   moveElement('focus_change_list',-490,0,5);
+   classNormal()
+   focusBtnList[2].className='current';
+   document.getElementById("focus").innerHTML="图片3";
+  }
+  focusBtnList[3].onmouseover = function() {
+   moveElement('focus_change_list',-735,0,5);
+   classNormal()
+   focusBtnList[3].className='current';
+   document.getElementById("focus").innerHTML="图片4";
+  }
+}
+setInterval('autoFocusChange()', 5000);
+var atuokey = false;
+function autoFocusChange() {
+ $('focus_change').onmouseover = function(){atuokey = true}
+ $('focus_change').onmouseout = function(){atuokey = false}
+ if(atuokey) return;
+ var focusBtnList = $('focus_change_btn').getElementsByTagName('li');
+ for(var i=0; i<focusBtnList.length; i++) {
+  if (focusBtnList[i].className == 'current') {
+   var currentNum = i;
+  }
+ }
+ if (currentNum==0 ){
+  moveElement('focus_change_list',-245,0,5);
+  classNormal()
+  focusBtnList[1].className='current';
+  document.getElementById("focus").innerHTML="图片2";
+ }
+ if (currentNum==1 ){
+  moveElement('focus_change_list',-490,0,5);
+  classNormal()
+  focusBtnList[2].className='current';
+  document.getElementById("focus").innerHTML="图片3";
+ }
+ if (currentNum==2 ){
+  moveElement('focus_change_list',-735,0,5);
+  classNormal()
+  focusBtnList[3].className='current';
+  document.getElementById("focus").innerHTML="图片4";
+ } 
+ if (currentNum==3 ){
+  moveElement('focus_change_list',0,0,5);
+  classNormal()
+  focusBtnList[0].className='current';
+  document.getElementById("focus").innerHTML="图片1";
+ }
+}
+window.onload=function(){
+ focusChange();
+}
+</script>
+</head>
+<body>
+<div id="bxgtd_all">
+	<!--bxgtd_top begin-->
+	<div id="bxgtd_top">
+    	<div class="fla_left in_d">
+        	<a href="#">设为首页</a>|<a href="#">加入收藏</a>
+        </div>
+        <div class="fla_right in_d">
+        	<a href="#" target="_blank">登录</a>|<a href="#" target="_blank">注册</a>|<a href="#" target="_blank">在线通话</a>|<a href="#" target="_blank">软件下载</a>|<a href="#" target="_blank">在线客服</a>
+        </div>
+    </div>
+    <!--bxgtd_top end-->	
+    <!--bxgtd_main begin-->
+    <div id="bxgtd_main">
+    <!--main_top begin-->
+    	<div id="main_top">
+        	<div class="logo fla_left">
+            	<a href="#"><img src="images/logo.jpg" /></a> <img class="com_name" src="images/com_name.jpg" />
+            </div>
+            <div class="search_1 fla_right">
+            	<div class="fla_left ser_inp"><input type="text" /></div><div class="fla_left"><input type="image" src="images/input_ser.jpg" /></div>
+            </div>
+        </div><!--main_top end-->
+        <!--nav_bxgtg begin-->
+        <div id="nav_bxgtg">
+        	<a href="index.html">首页</a><a href="qiyexx.html">企业信息</a><a href="shangjxx.html">商机信息</a><a class="current" href="zhixun.html">最新资讯</a><a href="qxzs.html">曲线走势</a><a href="jsfz.html">技术发展</a><a href="zhanhui.html">展会信息</a>
+        </div><!--nav_bxgtg end-->
+        <!--banner begin--><div id="banner"><img src="images/banner.jpg" /></div><!--banner end-->
+        <!--bxgtd_search begin--><div id="bxgtd_search">
+        	<div class="ser_con">
+            	<div class="ser_con_top"><div class="fla_left bxg_left"><span class="org bold von_1">不锈钢</span><a href="#">[切换行业]</a></div><div class="fla_right hot_ser">热门搜索：<a href="#" target="_blank">板材</a><a href="#" target="_blank">管材</a><a href="#" target="_blank">棒材</a><a href="#" target="_blank">型材</a><a href="#" target="_blank">304不锈钢</a><a href="#" target="_blank">201不锈钢</a><a href="#" target="_blank">316L不锈钢</a></div></div>
+            <div class="ser_con_bottom"><input class="ser_tex mar_add" type="text" /><input type="image" src="images/ser_inpt.jpg" /><select class="ser_select mar_40_l mar_add"><option value="0">全国范围</option></select><select class="ser_select mar_add"><option value="0">市级范围</option></select><select class="ser_select mar_add"><option value="0">县级范围</option></select></div>
+            </div>
+            
+        </div><!--bxgtd_search end-->
+        <div id="pindao">
+        	<div class="bor_botoom">
+            	<div class="pingd wid_3 fla_left"><span class="pd">频 道：</span><a href="#">镍</a> | <a href="#">废 料</a> | <a href="#">合 金</a> | <a href="#">板 材</a> | <a href="#">钢 管</a> | <a href="#">带材</a> | <a href="#">型材</a></div>
+                <div class="pingd wid_3 fla_left"><span class="pd">价 格：</span><a href="#">镍</a> | <a href="#">废 料</a> | <a href="#">合 金</a> | <a href="#">板 材</a> | <a href="#">钢 管</a> | <a href="#">带材</a> | <a href="#">型材</a></div>
+            </div>
+            <div class="pingd fla_left"><span class="pd">钢 厂：</span><a href="#">出厂价格</a> | <a href="#">外盘报价</a> | <a href="#">出厂价格</a> | <a href="#">外盘报价</a> | <a href="#">钢 管</a> | <a href="#">带材</a> | <a href="#">型材</a></div>
+        </div>
+        <!--con_zx begin-->
+        <div id="con_zx">
+        	<div id="zhixun_left">
+                <!--zhixun box1 begin-->
+            	<div class="bor_zx hei_add1">
+                	<div class="zx_boxtop back_zx1"><a class="tjzx" href="#">推荐资讯</a></div>
+                    <div class="zx_boxcon">
+                    	<!--pic_change begin-->
+                        <div class="pic_change">
+                            <div id="focus_change">
+                             <div id="focus_change_list" style="top:0; left:0;">
+                              <ul>
+                              <li><img src="pic/1.jpg" alt="" /></li>
+                              <li><img src="pic/2.jpg" alt="" /></li>
+                              <li><img src="pic/3.jpg" alt="" /></li>
+                              <li><img src="pic/4.jpg" alt="" /></li>
+                              </ul>
+                             </div>
+                             <div class="focus_change_opacity"></div>
+                             <div id="focus_change_btn">
+                              <ul>
+                              <div id="focus">图片1</div>
+                              <li class="current"><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              </ul>
+                             </div>
+                            </div>
+                    </div>
+                    <!--pic_change end-->
+                    <div class="xiangq fla_right">
+                    	<p class="tie">江苏东方钢材城拟扩建长城中心－－访钢材城董事长吴建</p>
+                        <ul class="title_nr">
+                        	<li><a href="#">2222无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                    </div>
+                    <div style="clear:both;"></div>
+                    </div>
+                </div><!--zhixun box1 end-->
+                <!--zhixun box2 begin-->
+                <div class="bor_zx hei_add1">
+                	<div class="zx_boxtop back_zx2">
+                    <span class="fla_left jig">价格行情</span><div class="change_nav fla_right">
+                        <a id="nav_1" class="current5" href="#" onmouseover="javascript:show_1(1)" onclick="javascript:show_1(1)">镍废料</a>
+                        <a id="nav_2" class="" href="#" onmouseover="javascript:show_1(2)" onclick="javascript:show_1(2)">合金</a>
+                        <a id="nav_3" class="" href="#" onmouseover="javascript:show_1(3)" onclick="javascript:show_1(3)">板材</a>
+                        <a id="nav_4" class="" href="#" onmouseover="javascript:show_1(4)" onclick="javascript:show_1(4)">钢管</a>
+                        <a id="nav_5" class="" href="#" onmouseover="javascript:show_1(5)" onclick="javascript:show_1(5)">型材</a>
+                        <a id="nav_6" class="" href="#" onmouseover="javascript:show_1(6)" onclick="javascript:show_1(6)">带材</a>
+                    </div>
+                    </div>
+                    <!--hidd_1 begin-->
+                     <div id="hidd_1" class="zx_boxcon" style="display:block;">
+                     	<ul class="title_nr2 fla_left">
+                        	<li><a href="#">1111无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                        <ul class="title_nr2 fla_right">
+                        	<li><a href="#">1111无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_1 end-->
+                     <!--hidd_2 begin-->
+                     <div id="hidd_2" class="zx_boxcon" style="display:none;">
+                     	<ul class="title_nr2 fla_left">
+                        	<li><a href="#">2222无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                        <ul class="title_nr2 fla_right">
+                        	<li><a href="#">2222无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_2 end-->
+                     <!--hidd_3 begin-->
+                     <div id="hidd_3" class="zx_boxcon" style="display:none;">
+                     	<ul class="title_nr2 fla_left">
+                        	<li><a href="#">3333无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                        <ul class="title_nr2 fla_right">
+                        	<li><a href="#">333无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_3 end-->
+                     <!--hidd_4 begin-->
+                     <div id="hidd_4" class="zx_boxcon" style="display:none;">
+                     	<ul class="title_nr2 fla_left">
+                        	<li><a href="#">4444无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                        <ul class="title_nr2 fla_right">
+                        	<li><a href="#">4444无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_4 end-->
+                     <!--hidd_5 begin-->
+                     <div id="hidd_5" class="zx_boxcon" style="display:none;">
+                     	<ul class="title_nr2 fla_left">
+                        	<li><a href="#">5555无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                        <ul class="title_nr2 fla_right">
+                        	<li><a href="#">555无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_5 end-->
+                     <!--hidd_6 begin-->
+                     <div id="hidd_6" class="zx_boxcon" style="display:none;">
+                     	<ul class="title_nr2 fla_left">
+                        	<li><a href="#">6666无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                        <ul class="title_nr2 fla_right">
+                        	<li><a href="#">6666无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_6 end-->
+                </div> <!--zhixun box2 end-->
+                <!--zhixun box3 begin-->
+                <div class="hei_add2">
+                	<div class="bor_zx fla_left wid_4 hei_add3">
+                    	<div class="zx_boxtop back_zx1">
+                        	<span class="fla_left jig2">市场快讯</span><div class="change_nav fla_left padd_add">
+                            <a id="nav_7" class="current5" href="#" onmouseover="javascript:show_2(7)" onclick="javascript:show_1(1)">价格</a>
+                            <a id="nav_8" class="" href="#" onmouseover="javascript:show_2(8)" onclick="javascript:show_1(2)">动态</a>
+                        </div>
+                        <!--hidd_7 begin-->
+                        <div id="hidd_7" class="zx_boxcon" style="display:block; clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">7777无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_7 end-->
+                     <!--hidd_8 begin-->
+                        <div id="hidd_8" class="zx_boxcon" style="display:none;clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">88888无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_8 end-->
+                        </div>
+                        
+                    </div>
+                    <div class="bor_zx fla_right wid_4 hei_add3">
+                    	<div class="zx_boxtop back_zx1">
+                        	<span class="fla_left jig2">分析预测</span><div class="change_nav fla_left padd_add">
+                            <a id="nav_9" class="current5" href="#" onmouseover="javascript:show_3(9)" onclick="javascript:show_1(1)">日评</a>
+                            <a id="nav_10" class="" href="#" onmouseover="javascript:show_3(10)" onclick="javascript:show_1(2)">周评</a>
+                            <a id="nav_11" class="" href="#" onmouseover="javascript:show_3(11)" onclick="javascript:show_1(2)">月评</a>
+                        </div>
+                        <!--hidd_9 begin-->
+                        <div id="hidd_9" class="zx_boxcon" style="display:block; clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">999无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_9 end-->
+                     <!--hidd_10 begin-->
+                        <div id="hidd_10" class="zx_boxcon" style="display:none;clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">100000000无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_10 end-->
+                     <!--hidd_11 begin-->
+                        <div id="hidd_11" class="zx_boxcon" style="display:none;clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">1011111无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_11 end-->
+                        </div>
+                        
+                    </div>
+                </div><!--zhixun box3 end-->
+                <!--zhixun box4 begin-->
+                <div class="hei_add2 marr_bott">
+                	<div class="bor_zx fla_left wid_4 hei_add3">
+                    	<div class="zx_boxtop back_zx1">
+                        	<span class="fla_left jig2">钢厂资讯</span><div class="change_nav fla_left padd_add">
+                            <a id="nav_12" class="current5" href="#" onmouseover="javascript:show_4(12)" onclick="javascript:show_4(12)">价格</a>
+                            <a id="nav_13" class="" href="#" onmouseover="javascript:show_4(13)" onclick="javascript:show_4(13)">动态</a>
+                        </div>
+                        <!--hidd_12 begin-->
+                        <div id="hidd_12" class="zx_boxcon" style="display:block; clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">价格价格价格无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_12 end-->
+                     <!--hidd_13 begin-->
+                        <div id="hidd_13" class="zx_boxcon" style="display:none;clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">动态动态动态无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_13 end-->
+                        </div>
+                        
+                    </div>
+                    <div class="bor_zx fla_right wid_4 hei_add3">
+                    	<div class="zx_boxtop back_zx1">
+                        	<span class="fla_left jig2">统计数据</span><div class="change_nav fla_left padd_add">
+                            <a id="nav_14" class="current5" href="#" onmouseover="javascript:show_5(14)" onclick="javascript:show_5(14)">进出口</a>
+                            <a id="nav_15" class="" href="#" onmouseover="javascript:show_5(15)" onclick="javascript:show_5(15)">产量</a>
+                            <a id="nav_16" class="" href="#" onmouseover="javascript:show_5(16)" onclick="javascript:show_5(16)">库存</a>
+                        </div>
+                        <!--hidd_14 begin-->
+                        <div id="hidd_14" class="zx_boxcon" style="display:block; clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">进出口进出口进出口无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_14 end-->
+                     <!--hidd_15 begin-->
+                        <div id="hidd_15" class="zx_boxcon" style="display:none;clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">产量产量产量无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_15 end-->
+                     <!--hidd_16 begin-->
+                        <div id="hidd_16" class="zx_boxcon" style="display:none;clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">库存库存库存无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_16 end-->
+                        </div>
+                        
+                    </div>
+                </div><!--zhixun box4 end-->
+                <!--zhixun box5 begin-->
+                <div class="hei_add2">
+                	<div class="bor_zx fla_left wid_4 hei_add3">
+                    	<div class="zx_boxtop back_zx1">
+                        	<span class="fla_left jig2">行业动态</span><div class="change_nav fla_left padd_add">
+                            <a id="nav_17" class="current5" href="#" onmouseover="javascript:show_6(17)" onclick="javascript:show_6(17)">业界</a>
+                            <a id="nav_18" class="" href="#" onmouseover="javascript:show_6(18)" onclick="javascript:show_6(18)">企业</a>
+                        </div>
+                        <!--hidd_17 begin-->
+                        <div id="hidd_17" class="zx_boxcon" style="display:block; clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">业界业界业界无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_17 end-->
+                     <!--hidd_18 begin-->
+                        <div id="hidd_18" class="zx_boxcon" style="display:none;clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">企业企业企业无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_18 end-->
+                        </div>
+                        
+                    </div>
+                    <div class="bor_zx fla_right wid_4 hei_add3">
+                    	<div class="zx_boxtop back_zx1">
+                        	<span class="fla_left jig2">相关产业</span><div class="change_nav fla_left padd_add">
+                            <a id="nav_19" class="current5" href="#" onmouseover="javascript:show_7(19)" onclick="javascript:show_7(19)">宏观</a>
+                            <a id="nav_20" class="" href="#" onmouseover="javascript:show_7(20)" onclick="javascript:show_7(20)">PMI</a>
+                            <a id="nav_21" class="" href="#" onmouseover="javascript:show_7(21)" onclick="javascript:show_7(21)">下游</a>
+                        </div>
+                        <!--hidd_19 begin-->
+                        <div id="hidd_19" class="zx_boxcon" style="display:block; clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">宏观宏观宏观无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_19 end-->
+                     <!--hidd_20 begin-->
+                        <div id="hidd_20" class="zx_boxcon" style="display:none;clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">PMIPMIPMIPMI无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_20 end-->
+                     <!--hidd_21 begin-->
+                        <div id="hidd_21" class="zx_boxcon" style="display:none;clear:both;">
+                     	<ul class="title_nr4">
+                        	<li><a href="#">下游下游下游无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     <!--hidd_21 end-->
+                        </div>
+                        
+                    </div>
+                </div><!--zhixun box5 end-->
+            </div>
+            <!--zhixun_left end-->
+            <!--zhixun_right bgein-->
+          <div id="zhixun_right">
+           		<!--con_1 begin--->
+       	    <div class="bor_zx2 wid_290 hei_add5">
+           	  <div class="zx_boxtop back_zx3">
+           	  <span class="fla_left kuaix cor_fff">东方不锈钢电子交易中心</span><span class="fla_right more_xq"><a class="cor_f00" href="#" target="_blank">远期行情</a></span></div>
+                            <div class="padd_5">
+               	      <table cellpadding="0" cellspacing="0" class="tab_zf">
+                         	<tr class="th_blue">
+                            	<td>品种名称</td>
+                                <td>最新价</td>
+                                <td>涨跌</td>
+                                <td>成交量</td>
+                                <td>持仓量</td>
+                            </tr>
+                            <tr>
+                            	<td class="blue">冷轧不锈卷</td>
+                                <td class="cor_f00">2189.0</td>
+                                <td class="cor_f00">65</td>
+                                <td>200</td>
+                                <td>6666</td>
+                            </tr>
+                            <tr>
+                            	<td class="blue">冷轧不锈卷</td>
+                                <td class="cor_f00">2189.0</td>
+                                <td class="cor_f00">65</td>
+                                <td>200</td>
+                                <td>6666</td>
+                            </tr>
+                            <tr>
+                            	<td class="blue">冷轧不锈卷</td>
+                                <td class="cor_f00">2189.0</td>
+                                <td class="cor_f00">65</td>
+                                <td>200</td>
+                                <td>6666</td>
+                            </tr>
+                            <tr>
+                            	<td class="blue">冷轧不锈卷</td>
+                                <td class="cor_f00">2189.0</td>
+                                <td class="cor_f00">65</td>
+                                <td>200</td>
+                                <td>6666</td>
+                            </tr>
+                            <tr>
+                            	<td class="blue">冷轧不锈卷</td>
+                                <td class="cor_f00">2189.0</td>
+                                <td class="cor_f00">65</td>
+                                <td>200</td>
+                                <td>6666</td>
+                            </tr>
+                            <tr>
+                            	<td class="blue">冷轧不锈卷</td>
+                                <td class="cor_f00">2189.0</td>
+                                <td class="cor_f00">65</td>
+                                <td>200</td>
+                                <td>6666</td>
+                            </tr>
+                            <tr>
+                            	<td class="blue">冷轧不锈卷</td>
+                                <td class="cor_f00">2189.0</td>
+                                <td class="cor_f00">65</td>
+                                <td>200</td>
+                                <td>6666</td>
+                            </tr>
+                         </table>
+                     		</div>
+            </div>
+                        <!--con_1 end--->
+                        <!--con_2 begin--->
+       	    <div class="bor_zx3 wid_290 hei_add4 marr_bott">
+                    	<div class="zx_boxtop back_zx4">
+                        	<span class="fla_left kuaix cor_fff">专题报道</span><span class="fla_right more_xq"><a href="#" target="_blank" class="cor_517">更多&gt;&gt;</a></span></div>
+                     	<!--hidd_11 begin-->
+              <div id="hidd_11" class="zx_boxcon">
+                     	<ul class="title_nr3">
+                        	<li><a href="#">1011111无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+              </div>
+                        </div>
+                        <!--con_2 end--->
+                        <!--con_3 begin--->
+       	    <div class="bor_zx3 wid_290 hei_add4">
+                    	<div class="zx_boxtop back_zx5">
+                        	<span class="fla_left jig">指 数</span>
+                            <div class="zhishu">
+                <a id="lay4" class="current3" onclick="javascript:menu_3(4)" onmouseover="javascript:menu_3(4)" href="#">行情</a>
+                <a id="lay5" class="" onclick="javascript:menu_3(5)" onmouseover="javascript:menu_3(5)" href="#">评析</a>
+                <a id="lay6" class="" onclick="javascript:menu_3(6)" onmouseover="javascript:menu_3(6)" href="#">动态</a>
+                		</div>
+                        </div>
+                     	 <!--mod4 begin-->
+                <div id="mod4" class="box_con" style="display:block;">
+                	<ul class="box_ul">
+                    	<li><div class="fla_left wid_5"><a href="#">111板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                        <li class="bor_non"><div class="fla_left wid_5"><a href="#">板材 &gt; 201 &gt; 2B</a></div><div class="fla_right wid_6">无锡市华因不锈钢集团有限公司</div></li>
+                    </ul>
+                </div><!--mod4 end-->
+                <!--mod5 begin-->
+                <div id="mod5" class="box_con" style="display:none;">
+                	<ul class="fla_left box_ul">
+                    	<li><a href="#">2222无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li class="bor_non"><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                    </ul>
+                </div><!--mod5 end-->
+                <!--mod6 begin-->
+                <div id="mod6" class="box_con" style="display:none;">
+                	<ul class="fla_left box_ul">
+                    	<li><a href="#">333无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        <li class="bor_non"><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                    </ul>
+                </div><!--mod6 end-->
+                     
+            </div>
+                        <!--con_3 end--->
+                        <!--con_4 begin--->
+       	    <div class="bor_zx2 wid_290 hei_add2 marr_bott">
+           	  <div class="zx_boxtop back_zx6">
+       	      <span class="fla_left kuaix cor_fff mar_10">商会新闻</span><span class="fla_right more_xq"><a href="#" target="_blank" class="cor_fff">更多&gt;&gt;</a></span></div>
+                     	 <!--hidd_11 begin-->
+                        <div id="hidd_11" class="zx_boxcon">
+                     	<ul class="title_nr3">
+                        	<li><a href="#">1011111无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                        </ul>
+                     </div>
+                     
+            </div>
+                        <!--con_4 end--->
+                      <!--con_5 begin--->
+                      <div class="bor_zx3 wid_290 hei_add4">
+                          <div class="zx_boxtop back_zx7"> <span class="fla_left jig">展会回顾</span><span class="fla_right more_xq"><a href="#" target="_blank" class="cor_517">更多&gt;&gt;</a></span></div>
+                          <!--hidd_11 begin-->
+                          <div id="hidd_12" class="zx_boxcon">
+                            <ul class="title_nr3">
+                              <li><a href="#">1011111无锡市华因不锈钢集团有限公司</a></li>
+                              <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                              <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                              <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                              <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                              <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                              <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                              <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                              <li><a href="#">无锡市华因不锈钢集团有限公司</a></li>
+                            </ul>
+                          </div>
+            </div>
+                      <!--con_5 end--->
+            </div>
+            <!--zhixun_right end-->
+            </div><!--con_zx end-->
+        </div><!--bxgtd_main end-->
+        <div id="footer">
+        	<a href="#">关于我们</a> | <a href="#">会员服务</a> | <a href="#">帮助中心</a> |<a href="#">代理加盟</a> |<a href="#">招聘信息</a> | <a href="#">友情链接</a>
+		<p>版权归属商助网所有 Copyright © 2003 - 2009 uniebiz.com Inc. All rights reserved.<br/>ICP证 苏B2 - 20080179</p>
+</div>
+    </div>	
+    <!--bxgtd_main end-->
+</div>
+</body>
+</html>

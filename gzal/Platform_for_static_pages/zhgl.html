@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>龙游服务平台首页</title>
+<link type="text/css" href="inc/style.css" rel="stylesheet"/>
+<link type="text/css"  href="inc/global_css.css" rel="stylesheet"/>
+<script language="javascript" type="text/javascript" src="js/Menu_Js.js"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+ <script type="text/javascript">
+/*幻灯片图片切换    jQuery图片预加载插件。 */
+jQuery.fn.loadthumb = function(options) {
+	options = $.extend({
+		 src : ""
+	},options);
+	var _self = this;
+	_self.hide();
+	var img = new Image();
+	$(img).load(function(){
+		_self.attr("src", options.src);
+		_self.fadeIn("slow");
+	}).attr("src", options.src);  //.atte("src",options.src)要放在load后面
+	return _self;
+}
+$(document).ready(function(){
+	 var len  = $(".num > li").length;
+	 var index = 0;
+	 var adTimer;
+	 $(".num li").mouseover(function(){
+		index  =   $(".num li").index(this);
+		showImg(index);
+	 }).eq(0).mouseover();	//滑入 停止动画，滑出开始动画.
+	 $('.ad').hover(function(){
+			 clearInterval(adTimer);
+		 },function(){
+			 adTimer = setInterval(function(){
+			    index++;
+				if(index==len){index=0;}
+				showImg(index);				
+			  } , 4000);
+	 }).trigger("mouseleave");
+});
+
+function showImg(index){
+		//定义图片的src
+   var links = ["###","###","###","###","###",]
+		var src = ["images/01.jpg","images/02.jpg","images/03.jpg","images/04.jpg","images/05.jpg"];
+		//运用图片预加载插件
+ $(".ad img").loadthumb({src:  src[index] });
+ $(".ad img").parent("a").attr("href",links[index]);
+ $(".num li").removeClass("on").eq(index).addClass("on");
+}
+    </script>
+	<script type="text/javascript">
+	/*
+$(document).ready(function(){
+$("#nav > li").hover(
+  function () {    
+   
+	$(this).removeClass("m_li");	
+	$(this).addClass("m_li_a");
+	var Sid=$(this).attr("id").replace("m_","")
+	$("#s_"+Sid).show();
+	
+    //$(this).addClass("hover"); 
+  },
+  function () {
+  	$(this).removeClass("m_li_a");
+    $(this).addClass("m_li");	
+	var Sid=$(this).attr("id").replace("m_","")
+	$("#s_"+Sid).hide();
+  }
+  
+); 
+
+}); */
+</script>
+	
+	<script type="text/javascript">	
+	
+	  function Nav(n){	 
+	    for(i=1;i<6;i++){
+			 if(n==i){		
+			  $("#m_"+i).removeClass("m_li");	 
+			  $("#m_"+i).addClass("m_li_a");
+			  $("#s_"+i).show();			  
+			 }
+			else{
+			  $("#m_"+i).removeClass("m_li_a");	 
+			 $("#m_"+i).addClass("m_li");
+			 $("#s_"+i).hide();
+			
+			}	 
+		  
+		}
+	  
+	  }
+	</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="top_Menu">
+<div class="main"><span>龙游网络欢迎您！</span>
+<form><input name="Text1" type="text" size="18" onmouseover="this.focus()" onblur="if(this.value == '') this.value = this.defaultValue" onfocus="if(this.value == this.defaultValue) this.value = ''" value="站内搜索"/> <input name="Button1" class="v2" type="image" value="Submit" src="images/search_GO.jpg"/ ></form>
+<ul>
+<li><a href="#" title="">设为主页</a></li>
+<li><a href="#" title="">帮助</a></li>
+</ul>
+</div>
+</div>
+	<div id="main">
+	<div id="header">
+    	<div id="header_content">
+        	<div class="min">
+            	<div class="logo"><a href="##" title="龙游网络平台"><img src="images/logo.gif"  alt="龙游网络平台"/></a></div>
+                <div class="right">
+                  <div class="ad">
+                        <a href="###" title="">
+                            <img src="images/01.jpg" width="717" height="121" alt="" /></a>
+                        <ul class="num">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="daohang">
+    	<div id="menu">
+     <ul  id="nav">
+    <li id="m_1" class="m_li_a"><a href="index.html" onmouseover="Nav(1)">首页</a></li>
+    <li id="m_2" class="m_li" ><a href="zhgl.html" onmouseover="Nav(2)">账户管理</a></li>  
+    <li id="m_3" class="m_li"  ><a href="zhcz.html" onmouseover="Nav(3)">账户充值</a></li> 
+    <li id="m_4" class="m_li"><a href="kfzx.html"  onmouseover="Nav(4)">客服中心</a></li>    
+    <li id="m_5" class="m_li" ><a href="swhz.html" onmouseover="Nav(5)">商务合作</a></li>    
+   </ul>
+</div>
+
+<div style="height:32px;">
+   <ul class="smenu">
+     <li style="padding-left:32px;" id="s_1" class='s_li_a'>
+     <a href="abouts.html"><span>公司介绍</span></a>
+     <a href="http://www.loonggame.com/"><span>产品介绍</span></a>
+     </li>
+     <li style="padding-left:220px;" id="s_2" class='s_li' >
+     <a href="mmxg.html"><span>密码修改</span></a>
+     <a href="grxx.html"><span>个人资料修改</span></a>
+     <a href="zhaq.html"><span>账号安全</span></a>
+     <a href="yxxg.html"><span>邮箱修改</span></a>
+     <a href="smrz.html"><span>实名认证</span></a>
+     <a href="zhsd.html"><span>账号锁定</span></a>
+     <a href="My_material.html"><span>个人信息</span></a>
+     <a href="zhzy.html"><span>账号转移</span></a>
+     </li>
+     <li style="padding-left:300px;" id="s_3" class='s_li' >
+     <a href="loonggame.html"><span>龙游世界充值</span></a>
+     <a href="czlsjl.html"><span>充值历史查询</span></a>
+     <a href="xfjlcx.html"><span>消费记录查询</span></a>
+     <a href="zhye.html"><span>账户余额查询</span></a>
+     <a href="ddcx.html"><span>订单查询</span></a>
+     <a href="bzcx.html"><span>标志查询</span></a>
+     <a href="wwzcx.html"><span>威望值查询</span></a>
+     </li>
+     <li style="padding-left:500px;" id="s_4" class='s_li' >
+     <a href="zxdy.html"><span> 在线答疑 </span></a>
+     <a href="czfw.html"><span> 传真服务 </span></a>
+     <a href="yxfw.html"><span> 邮箱服务 </span></a>
+     <a href="VIP_fw.html"><span> VIP服务 </span></a>
+     <a href="FAQ_cx.html"><span> FAQ查询 </span></a>
+     <a href="idgs.html"><span> ID挂失 </span></a>
+     </li>
+     <li style="padding-left:810px;" id="s_5" class='s_li' >
+     <a href="hzsq.html"><span>合作申请</span></a>
+     <a href="zpxx.html"><span>招聘信息</span></a>
+     </li>
+    </ul>    
+    	</div>
+    </div>
+    	<div id="content">
+        <div class="left">
+        	<div class="login">
+             	<h2>用户登录</h2>
+                <div class="conent">
+                <form>
+                 <div class="c_min">
+                 <div><img src="images/mode_1.gif" width="77" height="77"/><em>用户名:Jessica</em><br/><b>ID:[4578956]</b><div class="clear"></div></div>
+					<ul>                    
+					 <li><p>安全级别:<img src="images/anquan.png" /><span><a href="##">[设置]</a></span></p></li>
+                     <li><p>系统消息:[ <span>2</span>/20 ]</p></li>
+                     <li><a class="Orange" href="##" title="修改资料">修改资料</a> <a href="##" title="退 出">退 出</a></li>
+                     <li class="sz"><p class="bt">上次登录时间:</p></li>
+                     <li class="sz"><p class="sj">2010-8-2516:44:25</p></li>
+                     
+                     <li class="sz"><p class="bt">登录的IP:</p></li>
+                     <li class="sz"><p class="sj">上次:122.196.142.*</p></li>
+                     <li class="sz"><p class="sj">本次:122.196.142.*</p></li>
+                     </li>
+                      <li class="clear sz"></li>
+                    </ul>
+                 </div>
+                 </form>
+                </div>
+            </div>
+            <div class="service">
+             	<h2>客户服务</h2>
+                <div class="conent">
+                 <div class="s_min">
+                  	<ul>
+                    	<li class="dy">
+                        <p><a href="###">在线答疑</a></p>
+                        <p class="dy"><a href="###">OnlineCustomerService</a></p>
+                        </li>
+                        <li class="rx">
+                        <p>客服热线</p>
+                        <p class="rx">0510-85135333</p>
+                        <p class="xs">工作日：8:30-18:00</p>
+                        </li>
+                        <li  class="yx">
+                        <p>客服邮箱</p>
+                        <p class="yx">Service@LoongGame.com</p>
+                        </li>
+                  	</ul>
+                 </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+         	<h2>当前位置<span>龙游服务平台 &gt; 账户管理</span></h2>
+             <div class="content">
+            	<div class="c_min">
+                 	<h2><span>账户信息管理</span></h2>
+                    <div class="spx"></div>
+						<div class="zhglcont">
+                        <p><span><img src="images/mixg_icon.png" width="90" height="90" /></span>密码修改- 修改您的账户密码 <a href="mmxg.html">进 入</a></p>
+ 						 <div class="clear"></div>
+                        </div>
+                        <div class="zhglcont">
+                        <p><span><img src="images/grzl_icon.png" width="90" height="90" /></span>个人资料修改- 修改您的昵称、所在城市等信息 <a href="grxx.html">进 入</a></p>
+ 						 <div class="clear"></div>
+                        </div>
+                        <div class="zhglcont">
+                        <p><span><img src="images/zhaq_icon.png" width="90" height="90" /></span>账号安全- 申请密码保护、设置二级密码等 <a href="zhaq.html">进 入</a></p>
+ 						 <div class="clear"></div>
+                        </div>
+                        <div class="zhglcont">
+                        <p><span><img src="images/yxxg_icon.png" width="90" height="90" /></span>邮箱修改- 对密保邮箱进行修改及认证 <a href="yxxg.html">进 入</a></p>
+ 						 <div class="clear"></div>
+                        </div>
+                        <div class="zhglcont">
+                        <p><span><img src="images/zhaq_icon.png" width="90" height="90" /></span>身份证补填- 如果您注册时尚未填写身份证信息，请进行补填 <a href="smrz.html">进 入</a></p>
+ 						 <div class="clear"></div>
+                        </div>
+                        <div class="zhglcont">
+                   <p><span><img src="images/sfxg_icon.png" width="90" height="90" /></span>账号锁定- 账号的锁定及解锁操作。- 为了保证您的账号安全，请将长期不登陆的账号进行锁定。<a href="zhsd.html">进 入</a></p>
+ 						 <div class="clear"></div>
+                        </div>
+                     <div class="zhglcont">
+           <p><span><img src="images/grxx_icon.png" width="90" height="90" /></span>个人信息- 查看您的个人信息，包含会员资格、龙游币、威望值、个人形象、个人标志、门派信息等内容。<a href="My_material.html">进 入</a></p>
+ 						 <div class="clear"></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+         <div class="clear"></div>
+    	</div>
+	</div> 
+ 			<div id="footer">
+             <p class="Orange">抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+             <div class="daohang">
+              	<ul>
+                 	<li><a href="###">龙游简介</a></li>
+                    <li><a href="###">诚聘英才</a></li>
+                    <li><a href="###">服务条款</a></li>
+                    <li><a href="###">联系我们</a></li>
+                    <li><a href="###">广告服务</a></li>
+                    <li><a href="###">友情链接</a></li>
+                    <li><a class="none" href="###">意见反馈</a></li>
+                </ul>
+             </div>
+             <div class="copy"> <p>无锡龙游科技有限公司版权所有&copy;2009-2010</p>
+              <p><span>客户服务热线：0510-85135333 </span> <span>备案号:苏ICP备09078797号</span> <span>文网文[2010]185号</span></p>
+              </div>
+ 			</div> 
+</div>
+</body>
+</html>

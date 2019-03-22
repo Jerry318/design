@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0;}
+body{font:12px Arial,sans-serif; color:#333; background:#011420 url(../images/body_bg.png) no-repeat top center; overflow-x:hidden;}
+*, * focus{outline:none;margin: 0;padding:0;}
+a{text-decoration:none; color:#333;}
+a:hover{text-decoration:underline;}
+ul{list-style:none;}
+img{border:none;}
+.clear{ clear:both; height:1px; visibility:hidden; line-height:1px; overflow:hidden;}
+
+
+/*头部导航开始*/
+div#topMenu{ width:auto;line-height:34px; background:url(../images/topMenu_bg.jpg) repeat-x left center;} 
+div#topMenu .inner{width:960px;height:34px; margin:0 auto; overflow:hidden;}
+div#topMenu .inner .logo{ width:248px; height:34px; background:url(../images/logo_img.png) no-repeat left top; float:left; text-indent:-9999px;}
+div#topMenu .inner .logo a{ display:block; padding:0 3px;}
+div#topMenu .inner .middle{ float: left; height: 18px; line-height: 18px;overflow: hidden; padding-top:8px;text-align: center; width: 293px;}
+div#topMenu .inner .middle #box{width:293px; height:18px;overflow:hidden; font-size:12px; float:none;}
+div#topMenu .inner .middle #box li{list-style:none; line-height:18px;float:none;}
+
+div#topMenu .inner .middle a{ font:normal 12px/16px Verdana, Geneva, sans-serif; color:#333; }
+div#topMenu .inner ul{ float:right;list-style-type:none; line-height:34px; padding-top:0px;}
+div#topMenu .inner ul li{ float:left; margin-right:7px;}
+div#topMenu .inner ul li.red{font-weight:normal; color:red; margin:0;}
+div#topMenu .inner ul li a{font-weight:bold; padding:0 5px;color:#42454F;}
+div#topMenu .inner ul li a:hover{text-decoration:underline;color:#900;}
+/*头部导航结束*/
+
+/*主体包裹区域开始*/
+div#wrap{width:auto;}
+div#wrap .topWrap{width:auto;}
+div#wrap .footerWrap{}
+div#wrap .middleWrap{width:auto; height:auto!important; height:1295px; min-height:1295px; }
+div#wrap .middleWrap3{width:auto; height:auto;}
+
+div#banner{width:980px; height:169px; margin:0 auto;  position:relative; overflow:hidden;}
+div#banner .logo{width:216px; height:150px; position:absolute; top:0; left:10px; overflow:hidden; text-indent:-9999px;}
+div#banner .logo a{display:block;line-height:150px;width:216px; height:150px;}
+
+div#banner .links{ width:352px; height:30px; position:absolute; bottom:2px; right:2px; overflow:hidden;}
+div#banner .links ul{line-height:30px;text-indent:-9999px;}
+div#banner .links ul li{float:right;}
+div#banner .links ul li.fgq{margin-right:19px; display:inline;}
+div#banner .links ul li a{display:block; width:104px; height:29px; background:url(../images/EnterWebsite_button.png) no-repeat left top; overflow:hidden;_background:url(../images/EnterWebsite_button.jpg) no-repeat left top;}
+div#banner .links ul li a.lentan{ background:url(../images/officialForum_button.png) no-repeat left top;}
+div#banner .links ul li a:hover{background-position:left -29px; background-repeat:no-repeat;}
+
+/*主导航域开始*/
+div#Menu{ width:989px; height:97px; margin:5px auto; background:url(../images/menu_bg.png) center top no-repeat;_background:url(../images/menu_bg.jpg) center top no-repeat;}
+div#Menu .top{ width:989px; height:38px; margin:0 auto; font:bold 14px/38px Tahoma, Geneva, sans-serif;}
+div#Menu .top ul{padding:0 23px; list-style-type:none; list-style:none; overflow: hidden;} 
+div#Menu .top ul li{float:left; line-height:38px; background: url(../images/li_list_bg.jpg) no-repeat right center;}
+
+div#Menu .top ul li a{color:#fcff00; text-decoration:none; padding:0px 18px; display:block;}
+div#Menu .top ul li a:hover{color:#9F0; text-decoration:underline; padding:0px 18px; display:block;}
+div#Menu .bottom{width:989px; height:46px; margin:4px auto 0 auto; font:bold 14px/1.3  Tahoma, Geneva, sans-serif;}
+div#Menu .bottom ul{padding:0 113px; list-style-type:none; list-style:none; overflow: hidden; _display:inline-block; display:block; }
+div#Menu .bottom ul li{float:left; line-height:16px; font-size:12px; font-weight:normal;}
+div#Menu .bottom ul li strong{padding:1px 8px;display:block;}
+div#Menu .bottom ul li a{ color:#333; text-decoration:none; padding:1px 8px; display:block;}
+div#Menu .bottom ul li a:hover{ text-decoration:underline;}
+
+
+div#content{ width:989px;  margin:0 auto;background:url(../images/content_footer_bg2.png) left bottom no-repeat;_background:url(../images/content_footer_bg2.jpg) left bottom no-repeat;}
+div#content h3{ width:989px; line-height:67px; height:67px; margin:0 auto; background:url(../images/content_top.png) center top no-repeat; text-align:center; position:relative;overflow:hidden;_background:url(../images/content_top.jpg) center top no-repeat;}
+div#content h3 span{display:block; font:normal 12px/1.4 Arial, Helvetica, sans-serif; position:absolute; top:33px; left:40px; padding:5px;}
+div#content h3 span.Content{ font-size:14px; width:896px; background:#eee; border:1px solid #ccc; text-align:left;}
+div#content h3 strong{display:block;font:normal 12px/1.4 Tahoma, Geneva, sans-serif;position:absolute;top:33px; right:40px; padding:5px; width:auto;}
+div#content h3 strong a{display:inline-block; padding:1px 5px; text-decoration:none; color:#161018; border:1px solid #333; background:#E2E3DD; margin:0 2px;}
+div#content h3 strong a:hover{display:inline-block; padding:1px 5px; text-decoration:underline; color:#C06;border:1px solid #333; background:#FC0;}
+
+div#content h4{ height:76px; width:989px; margin:0 auto; line-height:76px; clear:both;text-align:center; position:relative; overflow:hidden; padding:0;}
+div#content h4 span{display:block; font:normal 12px/1.4 Arial, Helvetica, sans-serif; position:absolute; bottom:33px; left:40px; padding:5px; width:auto;}
+div#content h4 strong{display:block;font:normal 12px/1.4 Tahoma, Geneva, sans-serif;position:absolute;bottom:33px; right:40px; padding:5px; width:auto;}
+div#content h4 strong a{display:inline-block; padding:1px 5px; text-decoration:none; color:#161018; border:1px solid #333; background:#E2E3DD; margin:0 2px;}
+div#content h4 strong a:hover{display:inline-block; padding:1px 5px; text-decoration:underline; color:#C06;border:1px solid #333; background:#FC0;}
+
+
+div#content .inner{height:auto!important; height:881px; min-height:881px;width:989px; margin:0 auto; background:url(../images/content_y_repeat.png) repeat-y center top; padding:7px 0px;
+_background:url(../images/content_y_repeat.gif) repeat-y center top;}
+div#content .inner2{height:auto!important; height:455px; min-height:455px;width:989px; margin:0 auto; background:url(../images/content_y_repeat.png) repeat-y center top; padding:7px 0px;
+_background:url(../images/content_y_repeat.gif) repeat-y center top;}
+div#content .inner table{width:899px; height:auto; border:1px solid #6a6868; margin:0px auto 0px auto; border-collapse:collapse; font-size:12px; background:#eaeaea;}
+div#content .inner table th,div#content .inner table td{ text-align:center; padding-left:3px; line-height:1.3;}
+div#content .inner table th{ height:28px; background:#cdcdcd; color:#000; border:1px solid #6a6868; border-left:none; border-top:none; font-size:14px;} 
+div#content .inner table td{height:48px;  color:#000; border:1px solid #6a6868; border-left:none; border-top:none;font-size:14px;}
+div#content .inner table td.icon{ text-align:center; vertical-align:middle;}
+div#content .inner table td a{ text-decoration:none; color:#000;}
+div#content .inner table td a:hover{ text-decoration:underline;}
+div#content .inner2 .bizai{width:871px; height:auto; margin:0 auto;}
+div#content .inner2 .bizai h4{font:normal 12px/1.4 Tahoma, Geneva, sans-serif; text-align:left; height:auto; margin-bottom:14px; width:auto;}
+div#content .inner2 .bizai h4 strong{position:static; float:none; display:inline; font-weight:bold;padding:0;}
+div#content .inner2 .bizai .jianbi{ font-size:12px; color:#000; width:871px;}
+div#content .inner2 .bizai .jianbi .box{ width:256px; border:1px solid #53747B; padding:1px; background:#fff; overflow:hidden; height:auto; float:left; display:inline; margin:0 10px 10px 0;}
+div#content .inner2 .bizai .jianbi .box dl{width:255px; height:25px;}
+div#content .inner2 .bizai .jianbi .box dl dt{ display:none;}
+div#content .inner2 .bizai .jianbi .box dl dd{width:177px; height:24px; background-color: #FFFFFF;
+border-bottom: 1px solid #c9d079;  float:left; overflow:hidden; line-height:24px; text-align:left; padding-left:5px;}
+div#content .inner2 .bizai .jianbi .box dl dd.qishis{width:68px;padding-left:5px;background-color:#c9d079;border-bottom: 1px solid #FFFFFF;}
+div#content .inner2 .bizai .jianbi .box dl dd.noBottomList{ border:0;}
+div#content .inner2 .bizai .jianbi .tujian{font-size:14px; color:#000; width:871px; background:#fff;border:1px solid #c9d079; height:auto!important; height:264px; min-height:264px; clear:both; margin:0 auto; padding:1px;}
+div#content .inner2 .bizai .jianbi .tujian h5{ width:auto; height:28px; text-align:center; background:#c9d079; color:#000; line-height:28px; font-size:14px; font-weight:normal;}
+div#content .inner2 .bizai .jianbi .tujian p{ width:auto; padding:10px;}
+
+.even{background:#f3f3f3;}  /* 偶数行样式*/
+.odd{background:#eaeaea;}  /* 奇数行样式*/
+.hover{background:#E1EAEC;}/* 鼠标经过行样式*/
+
+
+#tooltip{
+	position:absolute;
+	border:1px solid #333;-moz-border-radius:3px; -webkit-border-radius:3px;
+	background:#3E6273; color:#FFF;
+	padding:1px; width:260px; line-height:1.3; height:auto;
+	color:#333;
+	display:none;
+}
+#tooltip img, .tooltip img{ float:left; margin:4px; display:inline;}
+
+.tooltip{position:absolute;
+	border:1px solid #333;-moz-border-radius:3px; -webkit-border-radius:3px;
+	background:#3E6273; color:#FFF;
+	padding:1px; width:260px; line-height:1.3; height:auto; font-size:12px; text-align:left;
+	color:#333;
+	display:none;}
+.show{display:block;}
+/*div#content .inner .left{width:224px; float:left; height:auto; margin-left:5px; display:inline;}
+div#content .inner .left .login{width:224px; height:175px; background:url(../images/accountLogin_bg.png) left top no-repeat; }
+div#content .inner .left .login2{width:224px; height:175px; background:url(../images/LoginComplete.jpg) left top no-repeat;}
+div#content .inner .left .login2 ul{height:111px; padding-top:58px; font-size:14px; padding-left:20px;}
+div#content .inner .left .login2 ul li{line-height:18px; color:#FFF;}
+
+
+div#content .inner .left .login form{ height:111px; padding-top:58px;}
+div#content .inner .left .login form div {margin:0 auto;height:27px; line-height:27px; padding-top:5px;}
+
+.int label {float:left; width:80px; text-align:right; margin-right:6px;visibility: hidden;_display:inline;}
+.int input {padding:2px 1px 2px 4px;background: none repeat scroll 0 0 transparent; border:none; width:118px; color:#fff; height:19px; line-height:19px;}
+div#content .inner .left .login form div.int2{padding-top:10px;}
+div#content .inner .left .login form div.sub{padding:8px 13px 0 10px; height:37px; width:204px;position:relative;}
+div#content .inner .left .login form div.sub ul li{line-height:37px;}
+div#content .inner .left .login form div.sub ul li a{ overflow:hidden; display:block; width:77px; height:28px; background:url(../images/zhaosi.png) no-repeat left top; text-indent:-9999px; margin:0 0 4px 3px;}
+*+html #content .inner .left .login form div.sub ul li a{margin:-5px 0 4px 3px;}
+.sub input#send{ width:88px; height:29px; position:absolute;bottom:11px; right:18px; border:none; overflow:hidden; text-indent: -9999px; background:url(../images/loginButton.png) no-repeat left top; cursor:pointer;_background:url(../images/loginButton.jpg) no-repeat left top;}
+.sub input#send:hover{ background:url(../images/loginButton.png) no-repeat left bottom;}
+
+#content .inner .left .linkList{padding-top:8px; width:224px; overflow:hidden;}
+#content .inner .left .linkList li{text-align:center;line-height:73px; height:73px; margin-bottom:8px;text-indent:-9999px;width:224px; background-repeat:no-repeat; background-position:0 0; background-image:url(../images/Button_a_pinhe.gif);cursor:pointer;}
+#content .inner .left .linkList li#bt2{background-position:0 -146px;cursor:pointer;}
+#content .inner .left .linkList li#bt3{background-position:0 -292px;cursor:pointer;}
+#content .inner .left .linkList li#bt4{background-position:0 -438px;cursor:pointer;}
+
+#content .inner .left .linkList li#bt4.hover{background-position:0 -511px;cursor:pointer;}
+#content .inner .left .linkList li#bt3.hover{background-position:0 -365px;cursor:pointer;}
+#content .inner .left .linkList li#bt2.hover{background-position:0 -219px;cursor:pointer;}
+#content .inner .left .linkList li.hover{background-position:0 -73px;cursor:pointer;}
+
+#content .inner .left .linkList li#bt4.selected{background-position:0 -511px;cursor:pointer;}
+#content .inner .left .linkList li#bt3.selected{background-position:0 -365px;cursor:pointer;}
+#content .inner .left .linkList li#bt2.selected{background-position:0 -219px;cursor:pointer;}
+#content .inner .left .linkList li.selected{background-position:0 -73px;cursor:pointer;}*/
+
+
+/*div#content .inner .left .linkList li a{ display:block; text-align:center; background:url(../images/Button_a1.png) no-repeat left top; width:224px; height:73px;}
+div#content .inner .left .linkList li a.bt2{background:url(../images/Button_a2.png) no-repeat left top;}
+div#content .inner .left .linkList li a.bt3{background:url(../images/Button_a3.png) no-repeat left top;}
+div#content .inner .left .linkList li a.bt4{background:url(../images/Button_a4.png) no-repeat left top;}
+/*div#content .inner .left .linkList li a:hover{background-position:left bottom; background-repeat:no-repeat;}*/
+
+
+
+
+
+
+#middleSwf{width:546px; height:499px; float:left; margin: 2px 0 0 2px; border:none; display:inline; background:#FFF; }
+
+/*div#content .inner .right{width:189px; float:right; height:auto; margin-right:6px; display:inline;}
+div#content .inner .right .xywj{width:189px; padding-bottom:12px; background:url(../images/FortunatelyPlayersFooter.png) no-repeat left bottom;}
+div#content .inner .right .xywj h3{width:189px; height:50px;line-height:50px; background:url(../images/FortunatelyPlayers_h3.png) no-repeat left top;}
+div#content .inner .right .xywj h3 span{ text-align:center; visibility:hidden;}
+div#content .inner .right .xywj .content{width:189px; height:auto!important; height:297px; min-height:297px; background:url(../images/FortunatelyPlayersContent_bg.png) repeat-y center top;}
+div#content .inner .right .xywj .content ul{width:160px; padding:2px 13px 0 15px; line-height:23px; overflow:hidden;list-style-type:none;}
+div#content .inner .right .xywj .content ul li{width:149px;overflow:hidden;background:url(../images/list_icon.jpg) no-repeat left center; padding-left:11px; border-bottom:1px dotted #15FAFF; color:#fff; font-size:13px; height:23px;text-overflow:ellipsis;word-break:keep-all;white-space:nowrap;overflow:hidden;}
+div#content .inner .right .bttomLinks{width:189px; height:142px; background:url(../images/rightBottomBox_bg.png) no-repeat left bottom; margin-top:7px;}
+div#content .inner .right .bttomLinks ul{width:153px;padding:16px 16px 0 18px; line-height:49px;}
+div#content .inner .right .bttomLinks ul li{text-indent:-9999px;}
+div#content .inner .right .bttomLinks ul li.jiange{margin-bottom:10px;}
+div#content .inner .right .bttomLinks ul li a{ display:block; width:153px; height:50px; background:url(../images/IntoTheGame.png) no-repeat left top;_background:url(../images/IntoTheGame.jpg) no-repeat left top; overflow:hidden;}
+div#content .inner .right .bttomLinks ul li a.ayhome{background:url(../images/AiYou_home.png) no-repeat left top;_background:url(../images/AiYou_home.jpg) no-repeat left top;}
+div#content .inner .right .bttomLinks ul li a:hover{background-repeat:no-repeat; background-position:left bottom;}*/
+/*主体包裹区域结束*/
+
+
+
+/*脚部包裹区域开始*/
+div#footer{width:auto;height:113px;  padding-top:15px; color:#CCC;}
+#footerMenu{width:372px; height:20px; margin:0 auto;}
+#footerMenu ul{font:normal 14px/18px Tahoma, Geneva, sans-serif; text-align:center;}
+#footerMenu ul li{ float:left; padding-right:5px; background:url(../images/a_right.png) no-repeat right center;}
+#footerMenu ul li.none{ background:none;}
+#footerMenu ul li a{ padding:3px 10px;  color:#eee; text-decoration:none;}
+#footerMenu ul li a:hover{ text-decoration:underline;}
+div#footer p{font:normal 12px/14px Tahoma, Geneva, sans-serif; text-align:center; padding:4px 10px;}
+/*脚部包裹区域结束*/
+
+
+/*滚动显示玩家信息的代码*/
+#demoTop {
+float:left;
+margin:2px auto;
+overflow:hidden;
+height: 293px;
+width: 189px;
+}
+#demoTop .indemo {
+float: left;
+height: 1000%;
+}
+#demo1,#demo3 {
+float: left;
+border:none;
+}
+#demo2,#demo4 {
+float: left;
+border:none;
+}
+
+.tab_box{width:545px; float:left; /*height:auto!important; height:502px; min-height:502px;*/margin: 0 0 0 8px; display:inline;height:498px;_height:498px; overflow:hidden;}
+.tab_box div{ width:545px; overflow:hidden; padding:0 0 11px 0; background:url(../images/middle_content_footer.png) no-repeat left bottom;}
+.tab_box div h2{ font:bold 14px/50px Tahoma, Geneva, sans-serif;width:545px; height:50px; display:block; overflow:hidden; text-indent:-9999px; background:url(../images/middle_h3_bg1.png) no-repeat left top;}
+.tab_box div h2.two{background:url(../images/middle_h3_bg1.png) no-repeat 0 -50px;}
+.tab_box div h2.Three{background:url(../images/middle_h3_bg1.png) no-repeat 0 -100px;}
+.tab_box div h2.Four{background:url(../images/middle_h3_bg1.png) no-repeat 0 -150px;}
+.tab_box div .content{width:515px; height:auto!important; height:421px; min-height:421px; background:url(../images/middle_content_y_bg.png) repeat-y left top;padding:8px 15px; color:#FFFF00;}
+.tab_box div .content h4{ font:bold 16px/20px Tahoma, Geneva, sans-serif; margin:15px 0 10px 0;padding:0 29px;}
+.tab_box div .content p{font:normal 14px/2.3 Tahoma, Geneva, sans-serif; text-indent:0; padding:0 42px;}
+.tab_box div .content p a{color:#C00;font-weight:bold; text-decoration:underline;}
+.tab_box div .content p a.red,.tab_box div .content p span{ color:#C00;}
+.hide{display:none;}
+.show{ display:block;}

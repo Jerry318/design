@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>宜佳公司--无锡市宜佳人力资源有限公司--无锡市宜佳后勤服务有限公司</title>
+<link rel="stylesheet" href="css/yiji_style.css" />
+<script src="scripts/jquery-1.3.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(function(){
+	    var $div_li =$("div.tab_menu ul li");
+	    $div_li.click(function(){
+			$(this).addClass("selected")            //当前<li>元素高亮
+				   .siblings().removeClass("selected");  //去掉其它同辈<li>元素的高亮
+            var index =  $div_li.index(this);  // 获取当前点击的<li>元素 在 全部li元素中的索引。
+			$("div.tab_box > div")   	//选取子节点。不选取子节点的话，会引起错误。如果里面还有div 
+					.eq(index).show()   //显示 <li>元素对应的<div>元素
+					.siblings().hide(); //隐藏其它几个同辈的<div>元素
+		}).hover(function(){
+			$(this).addClass("hover");
+		},function(){
+			$(this).removeClass("hover");
+		})
+	})
+//]]>
+</script>
+</head>
+
+<body>
+  <div id="maxbox">
+      <div id="container">
+          <h1 title="宜佳公司欢迎您"><span>宜佳公司 无锡市宜佳人力资源有限公司 无锡市宜佳后勤服务有限公司</span></h1>
+          <div class="topMenu">
+            <ul>
+              <li class="none"><a href="#">加入收藏</a></li>
+              <li><a href="#">设为首页</a></li>
+            </ul>
+          </div>
+          <div class="Phone"><span>0510-85220729</span></div>
+          <div class="kong"></div>
+          <!-- 导航开始  -->
+        <div id="menu">
+           <div>
+              <ul id="topnav">
+                <li><a class="home" href="index.html">首页</a></li>
+                <li>
+                  <a class="gsgk" href="gsgk.html">公司概况</a>
+                  <div class="sub">
+                  <ul>
+                    <li><a href="qyjj.html">企业简介</a></li>
+                    <li><a href="qywh.html">企业文化</a></li>
+                    <li><a href="qyfc.html">企业风采</a></li>
+                    <li><a href="zlry.html">资历荣誉</a></li>
+                  </ul>
+                  </div>
+                </li>
+                <li>
+                    <a class="news" href="news.html">新闻中心</a>
+                   <div class="sub">
+                   <ul>
+                    <li><a href="hyzx.html">行业资讯</a></li>
+                    <li><a href="qydt.html">企业动态</a></li>
+                    <li><a href="zcfg.html">政策法规</a></li>
+                   </ul>
+                   </div>
+                </li>
+                <li>
+                   <a class="rlzy" href="rlzy.html">人力资源服务</a>
+                   <div class="sub">
+                   <ul>
+                     <li><a href="lwpq.html">劳务派遣</a></li>
+                     <li><a href="zyjs.html">职业介绍</a></li>
+                   </ul>
+                   </div>
+                </li>
+                <li>
+                   <a class="hqfw" href="hqfw.html">后勤服务</a>
+                   <div class="sub">
+                   <ul>
+                    <li><a href="fwms.html">服务模式</a></li>
+                    <li><a href="wygl.html">物业管理</a></li>
+                    <li><a href="ygss.html">员工宿舍</a></li>
+                    <li><a href="ygst.html">员工食堂</a></li>
+                    <li><a href="gwcs.html">购物超市</a></li>
+                    <li><a href="ydcs.html">运动场所</a></li>
+                  </ul>
+                  </div>
+                </li>
+                <li><a class="fwwl" href="fwwl.html">服务网络</a></li>
+                <li><a class="rczp" href="rczp.html">人才招聘</a></li>
+                <li><a class="lxwm" href="lxwm.html">联系我们</a></li>
+              </ul>
+           </div>
+        </div> 
+        <!-- 导航结束  -->
+        
+        <!-- 主体内容开始  -->
+        
+        <div id="content">
+        <!-- 左边开始  -->
+        
+          <div class="leftList">
+            <div class="wangrui">
+              <h2 class="left2">公司概况</h2>
+              <div class="content">
+                 <ul class="tongyong">
+                  <li><a href="qyjj.html">企业简介</a></li>
+                  <li><a href="qywh.html">企业文化</a></li>
+                  <li><a href="qyfc.html">企业风采</a></li>
+                  <li><a href="zlry.html">资历荣誉</a></li>
+                </ul>
+              </div>
+             
+            </div>
+            
+            <div class="wangrui">
+              <h2 class="left">服务项目</h2>
+              <div class="content">
+                <div class="fwxm" title="劳务派遣"><a href="lwpq.html">劳务派遣</a></div>
+                <div class="fwxm" title="职业介绍"><a class="zy" href="zyjs.html">职业介绍</a></div>
+                <div class="fwxm" title="宿舍租赁"><a class="ss" href="sszp.html">宿舍租赁</a></div>
+              </div>
+             </div>
+            <div class="wangrui">
+              <h2 class="left">服务模式</h2>
+              <div class="content">
+                <div class="fwms" title="服务模式"><a href="fwms.html">服务模式</a></div>
+              </div>
+             
+            </div>
+          </div>
+          <!-- 左边结束  -->
+          
+          <!-- 右边开始  -->
+          <div class="rightBox">
+             <div class="tongYongBox">
+               <h2>宜佳公司简介</h2>
+               <div class="content">
+                <!--<div class="pic" title="宜佳公司简介"><a href="###">公司简介</a></div>-->
+                 <h4>宜佳公司</h4>
+                 <p><img src="images/gsjj_img.png" alt="宜佳公司简介" />宜佳公司是一家以企业服务业务为中心的综合型企业。主要业务包括：劳务派遣、职业招聘、员工宿舍租赁、员工餐饮管理等。公司拥有一支专业性强、文化水平高、年轻向上的职工队伍，凭借客户至上、服务到位、管理严肃的工作作风，受到用工单位的一致好评和信任。<!--<a href="###" title="宜佳公司简介">公司简介</a>--></p> 
+                 <h4>无锡市宜佳人力资源有限公司</h4> 
+                 <p>   无锡市宜佳人力资源有限公司是经劳动部门批准、具有独立法人资格的劳务服务组织，专业从事职业介绍、劳务派遣、劳务引进、输出和劳务承包等业务。公司不仅拥有一支专业性强、文化水平高、年轻向上的职工队伍，是集招聘、培训、面试安排、入职体检安排、工资发放、社保缴纳、工伤申报、劳动纠纷处理等服务于一体的专业劳务派遣机构。能准确、及时地协助合作单位输送各项业务，处理各类劳资纠纷和提供各种人力资源管理方案。凭借客户至上、服务到位、管理严肃的工作作风，受到用工单位的一致好评和信任。目前服务客户已达多家，同时与国内多家劳务相关机构、学校建有长期稳定的合作关系，能及时地为用工单位提供人力资源，满足用人需求。</p> 
+                 <h4>无锡市宜佳后勤服务有限公司</h4> 
+                 <p> 无锡市宜佳后勤服务有限公司是一家专门为大型企业员工提供集中住宿服务和物业管理的大型专业服务企业。公司培养了一批高水准高素质的管理服务人员，打造了一支能吃苦耐劳、敬业心强、经验丰富的员工队伍。企业经营范围包括：企业管理、企业员工宿舍管理、企业员工餐饮管理、绿化养护、通信器材、日用百货、服装、鞋帽、五金电器的销售、代理发展电信业务、代理发展邮政业务、代理发展票务服务、境内劳务派遣。</p>            
+               </div>            
+             </div>
+          </div>
+          <!-- 右边结束 -->
+          <div class="clear"></div>
+        </div> 
+        <!-- 主体内容结束 --> 
+        <!-- 下导航开始 --> 
+        <div class="footerMenu">
+            <ul>
+              <li class="none"><a href="index.html">首页</a></li>
+              <li><a href="gsgk.html">公司概况</a></li>
+              <li><a href="news.html">新闻中心</a></li>
+              <li><a href="rlzy.html">人力资源服务</a></li>
+              <li><a href="hqfw.html">后勤服务</a></li>
+              <li><a href="fwwl.html">服务网络</a></li>
+              <li><a href="rczp.html">人才招聘</a></li>
+              <li><a href="lxwm.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!-- 下导航结束 --> 
+        <!-- 脚部内容开始 -->
+        <div class="footerBox">
+         <p><span>建议请使用IE7及以上版本，火狐，谷歌，Safari浏览器进行浏览以确保正常显示内容</span></p>
+         <p>版权所有：无锡市宜佳人力资源有限公司，无锡市宜佳后勤服务有限公司   地 址：无锡市新区汉江路5号新区交警大队院内1幢406室<br/>   
+            联系电话：( 单位招聘 )：13003338159、18912391947钟小姐   ( 个人求职) ：0510—85220729；85220927</p>
+        </div>
+        <!-- 脚部内容结束 -->
+      </div>
+  </div>
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+	
+
+	function megaHoverOver(){
+		$(this).find(".sub").stop().fadeTo('fast', 1).show();
+			
+		//Calculate width of all ul's
+		(function($) { 
+			jQuery.fn.calcSubWidth = function() {
+				rowWidth = 0;
+				//Calculate row
+				$(this).find("ul").each(function() {					
+					rowWidth += $(this).width(); 
+				});	
+			};
+		})(jQuery); 
+		
+		if ( $(this).find(".row").length > 0 ) { //If row exists...
+			var biggestRow = 0;	
+			//Calculate each row
+			$(this).find(".row").each(function() {							   
+				$(this).calcSubWidth();
+				//Find biggest row
+				if(rowWidth > biggestRow) {
+					biggestRow = rowWidth;
+				}
+			});
+			//Set width
+			$(this).find(".sub").css({'width' :biggestRow});
+			$(this).find(".row:last").css({'margin':'0'});
+			
+		} else { //If row does not exist...
+			
+			$(this).calcSubWidth();
+			//Set Width
+			$(this).find(".sub").css({'width' : rowWidth});
+			
+		}
+	}
+	
+	function megaHoverOut(){ 
+	  $(this).find(".sub").stop().fadeTo('fast', 0, function() {
+		  $(this).hide(); 
+	  });
+	}
+
+
+	var config = {    
+		 sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
+		 interval: 100, // number = milliseconds for onMouseOver polling interval    
+		 over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
+		 timeout: 500, // number = milliseconds delay before onMouseOut    
+		 out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
+	};
+
+	$("ul#topnav li .sub").css({'opacity':'0'});
+	$("ul#topnav li").hoverIntent(config);
+
+
+
+});
+
+//]]>
+</script>
+  
+</body>
+</html>

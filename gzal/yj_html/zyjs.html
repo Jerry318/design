@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>宜佳公司--无锡市宜佳人力资源有限公司--无锡市宜佳后勤服务有限公司</title>
+<link rel="stylesheet" href="css/yiji_style.css" />
+<script src="scripts/jquery-1.3.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(function(){
+	    var $div_li =$("div.tab_qyfc ul li");
+	    $div_li.click(function(){
+			$(this).addClass("selected")            //当前<li>元素高亮
+				   .siblings().removeClass("selected");  //去掉其它同辈<li>元素的高亮
+            var index =  $div_li.index(this);  // 获取当前点击的<li>元素 在 全部li元素中的索引。
+			$("div.qyfc_box > div")   	//选取子节点。不选取子节点的话，会引起错误。如果里面还有div 
+					.eq(index).show()   //显示 <li>元素对应的<div>元素
+					.siblings().hide(); //隐藏其它几个同辈的<div>元素
+		}).hover(function(){
+			$(this).addClass("hover");
+		},function(){
+			$(this).removeClass("hover");
+		})
+	})
+//]]>
+</script>
+</head>
+
+<body>
+  <div id="maxbox">
+      <div id="container">
+          <h1 title="宜佳公司欢迎您"><span>宜佳公司 无锡市宜佳人力资源有限公司 无锡市宜佳后勤服务有限公司</span></h1>
+          <div class="topMenu">
+            <ul>
+              <li class="none"><a href="#">加入收藏</a></li>
+              <li><a href="#">设为首页</a></li>
+            </ul>
+          </div>
+          <div class="Phone"><span>0510-85220729</span></div>
+          <div class="kong"></div>
+          <!-- 导航开始  -->
+        <div id="menu">
+           <div>
+              <ul id="topnav">
+                <li><a class="home" href="index.html">首页</a></li>
+                <li>
+                  <a class="gsgk" href="gsgk.html">公司概况</a>
+                  <div class="sub">
+                  <ul>
+                    <li><a href="qyjj.html">企业简介</a></li>
+                    <li><a href="qywh.html">企业文化</a></li>
+                    <li><a href="qyfc.html">企业风采</a></li>
+                    <li><a href="zlry.html">资历荣誉</a></li>
+                  </ul>
+                  </div>
+                </li>
+                <li>
+                    <a class="news" href="news.html">新闻中心</a>
+                   <div class="sub">
+                   <ul>
+                    <li><a href="hyzx.html">行业资讯</a></li>
+                    <li><a href="qydt.html">企业动态</a></li>
+                    <li><a href="zcfg.html">政策法规</a></li>
+                   </ul>
+                   </div>
+                </li>
+                <li>
+                   <a class="rlzy" href="rlzy.html">人力资源服务</a>
+                   <div class="sub">
+                   <ul>
+                     <li><a href="lwpq.html">劳务派遣</a></li>
+                     <li><a href="zyjs.html">职业介绍</a></li>
+                   </ul>
+                   </div>
+                </li>
+                <li>
+                   <a class="hqfw" href="hqfw.html">后勤服务</a>
+                   <div class="sub">
+                   <ul>
+                    <li><a href="fwms.html">服务模式</a></li>
+                    <li><a href="wygl.html">物业管理</a></li>
+                    <li><a href="ygss.html">员工宿舍</a></li>
+                    <li><a href="ygst.html">员工食堂</a></li>
+                    <li><a href="gwcs.html">购物超市</a></li>
+                    <li><a href="ydcs.html">运动场所</a></li>
+                  </ul>
+                  </div>
+                </li>
+                <li><a class="fwwl" href="fwwl.html">服务网络</a></li>
+                <li><a class="rczp" href="rczp.html">人才招聘</a></li>
+                <li><a class="lxwm" href="lxwm.html">联系我们</a></li>
+              </ul>
+           </div>
+        </div> 
+        <!-- 导航结束  -->
+        
+        <!-- 主体内容开始  -->
+        
+        <div id="content">
+        <!-- 左边开始  -->
+        
+          <div class="leftList">
+            <div class="wangrui">
+              <h2 class="left2">人力资源服务</h2>
+              <div class="content">
+                 <ul class="tongyong">
+                  <li><a href="lwpq.html">劳务派遣</a></li>
+                  <li><a href="zyjs.html">职业介绍</a></li>
+                  
+                </ul>
+              </div>
+             
+            </div>
+            
+            <div class="wangrui">
+              <h2 class="left">服务项目</h2>
+              <div class="content">
+                <div class="fwxm" title="劳务派遣"><a href="lwpq.html">劳务派遣</a></div>
+                <div class="fwxm" title="职业介绍"><a class="zy" href="zyjs.html">职业介绍</a></div>
+                <div class="fwxm" title="宿舍租赁"><a class="ss" href="sszp.html">宿舍租赁</a></div>
+              </div>
+             </div>
+            <div class="wangrui">
+              <h2 class="left">服务模式</h2>
+              <div class="content">
+                <div class="fwms" title="服务模式"><a href="fwms.html">服务模式</a></div>
+              </div>
+             
+            </div>
+          </div>
+          <!-- 左边结束  -->
+          
+          <!-- 右边开始  -->
+          <div class="rightBox">
+             <div class="tongYongBox">
+               <h2>宜佳职业介绍</h2>
+               <div class="content">
+                    <div class="tab_qyfc">
+                      <ul>
+                        <li class="selected">我们的服务</li>
+                        <li>劳务派遣单位</li>
+                        
+                        
+                      </ul>
+                    </div> 
+                    
+                <div class="qyfc_box">
+                        <div>
+                            <p><br /></p>
+                            <h5 class="lwpq"> 信息途径：</h5>
+                           <p>本公司定期组织用人单位和求职者进行面试，并定期举行专场大型招聘会，我们提供全方位的一条龙服务。我们秉承"以人为本、诚信服务"的宗旨，尽心服务于广 大企业和求职人员。开展人才交流、职业介绍、素质测评、                              举办招聘会、开展各类培训、网上招聘服务、人事代理、劳动保障事务代理、高级猎头等服务。对用人单 位实行全免费服务并且每周在报纸上发布信息。</p> 
+                          
+                           <h5 class="lwpq"> 我们的特色：</h5>
+                           <p>1．对企业实行全免费服务，每天组织单位和求职者进行现场面试。</p><p>
+                              2．本公司建有大容量的人力资源储备库20000多人和对高级人才存储及猎取。</p><p>
+                              3．本公司建立全省招聘，求职网络平台并开设相关培训班。</p><p>
+                              4．本公司同时和徐州、山西、山东、安徽、贵州、云南、江西、江苏等省的劳动局及劳务输出部门有着密切的联系，并每月组织求职者到无锡就业。</p><p>
+                              5．本公司一年365天对外服务，并对家庭特困户全免费服务。</p> 
+                            <h5 class="lwpq"> 我们的客户：</h5>
+                           <p>凭借真诚、周到的服务和准确的市场定位，我们已经成为苏南众多外资企业、国有企业、民营企业等知名企业招聘人员的服务机构。</p>
+                           <h5 class="lwpq">我们的承诺</h5> 
+                          <p>1．全方位对企业实行跟踪服务，让企业一次招聘到最合适的人员。</p><p>
+                              2．企业单位可获得免费推荐人员服务，并可享受设摊招聘和发布信息等各项优惠。</p><p>
+                              3．对所有在本公司招聘的用人单位，我们将提供长期的人力资源查询服务。</p><p>
+                              4．对有大量操作工需要的企业我们将在2日内组织好求职者与单位洽谈、面试。</p><p>
+                              5．对本市用人单位均在30分钟内提供免费上门服务，并配有专门的人员跟踪服务。</p><p>
+                              </p>
+                        </div>
+                        
+                        <div class="hide">
+                        <p><br /></p>
+                        <h5 class="lwpq">合作单位网址链接</h5> 
+                           <!--<a href=""></a>-->
+                           <ul class="link_qy1">
+                              <li><a href="###"><img src="images/link_company1.png" alt="英莳精密部件（无锡）分公司" /></a></li>
+                              <li><a href="###"><img src="images/link_company3.png" alt="上海天原国际货运有限公司无锡分公司" /></a></li>
+                              <li><a href="###"><img src="images/link_company5.png" alt="无锡松下冷机压缩机有限公司"/></a></li>
+                              <li><a href="###"><img src="images/link_company2.png" alt="晶华光电无锡（材料）有限公司" /></a></li>
+                              <li><a href="###"><img src="images/link_company4.png" alt="安井食品有限公司" /></a></li>
+                              <li><a href="###"> <img src="images/link_company6.png" alt="元祖食品公司" /></a></li>
+                          </ul>
+                          <ul class="link_qy">
+                              <li><a href="###">无锡松下冷机有限公司</a></li>
+                              <li><a href="###">硕放宁福食品有限公司</a></li>
+                              <li><a href="###">太平养老保险股份有限公司江苏分公司</a></li>
+                              <li><a href="###">无锡三凤桥食品专卖有限责任公司</a></li>
+                              <li><a href="###">无锡市山水城物业管理有限公司</a></li>
+                              <li><a href="###">无锡松下冷机有限公司</a></li>
+                              <li><a href="###">硕放宁福食品有限公司</a></li>
+                              <li><a href="###">无锡太湖创意产业投资发展有限公司</a></li>
+                           </ul> 
+                        </div>
+                        
+                                        
+                    </div> 
+                <div class="clear"></div>       
+               </div>            
+             </div>
+          </div>
+          <!-- 右边结束 -->
+          <div class="clear"></div>
+        </div> 
+        <!-- 主体内容结束 --> 
+        <!-- 下导航开始 --> 
+        <div class="footerMenu">
+            <ul>
+              <li class="none"><a href="index.html">首页</a></li>
+              <li><a href="gsgk.html">公司概况</a></li>
+              <li><a href="news.html">新闻中心</a></li>
+              <li><a href="rlzy.html">人力资源服务</a></li>
+              <li><a href="hqfw.html">后勤服务</a></li>
+              <li><a href="fwwl.html">服务网络</a></li>
+              <li><a href="rczp.html">人才招聘</a></li>
+              <li><a href="lxwm.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!-- 下导航结束 --> 
+        <!-- 脚部内容开始 -->
+        <div class="footerBox">
+         <p><span>建议请使用IE7及以上版本，火狐，谷歌，Safari浏览器进行浏览以确保正常显示内容</span></p>
+         <p>版权所有：无锡市宜佳人力资源有限公司，无锡市宜佳后勤服务有限公司   地 址：无锡市新区汉江路5号新区交警大队院内1幢406室<br/>   
+            联系电话：( 单位招聘 )：13003338159、18912391947钟小姐   ( 个人求职) ：0510—85220729；85220927</p>
+        </div>
+        <!-- 脚部内容结束 -->
+      </div>
+  </div>
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+	
+
+	function megaHoverOver(){
+		$(this).find(".sub").stop().fadeTo('fast', 1).show();
+			
+		//Calculate width of all ul's
+		(function($) { 
+			jQuery.fn.calcSubWidth = function() {
+				rowWidth = 0;
+				//Calculate row
+				$(this).find("ul").each(function() {					
+					rowWidth += $(this).width(); 
+				});	
+			};
+		})(jQuery); 
+		
+		if ( $(this).find(".row").length > 0 ) { //If row exists...
+			var biggestRow = 0;	
+			//Calculate each row
+			$(this).find(".row").each(function() {							   
+				$(this).calcSubWidth();
+				//Find biggest row
+				if(rowWidth > biggestRow) {
+					biggestRow = rowWidth;
+				}
+			});
+			//Set width
+			$(this).find(".sub").css({'width' :biggestRow});
+			$(this).find(".row:last").css({'margin':'0'});
+			
+		} else { //If row does not exist...
+			
+			$(this).calcSubWidth();
+			//Set Width
+			$(this).find(".sub").css({'width' : rowWidth});
+			
+		}
+	}
+	
+	function megaHoverOut(){ 
+	  $(this).find(".sub").stop().fadeTo('fast', 0, function() {
+		  $(this).hide(); 
+	  });
+	}
+
+
+	var config = {    
+		 sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
+		 interval: 100, // number = milliseconds for onMouseOver polling interval    
+		 over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
+		 timeout: 500, // number = milliseconds delay before onMouseOut    
+		 out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
+	};
+
+	$("ul#topnav li .sub").css({'opacity':'0'});
+	$("ul#topnav li").hoverIntent(config);
+
+
+
+});
+
+//]]>
+</script>
+  
+</body>
+</html>
